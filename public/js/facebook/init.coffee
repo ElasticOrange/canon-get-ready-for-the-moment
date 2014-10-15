@@ -16,16 +16,21 @@ FB_fetchInformation = ()->
     FB.api \
         '/me'
         , (response)->
-            # Save the user global object
+            # Save the user object
             FB_user = response
+            sessionStorage.setItem('FB_user', JSON.stringify(FB_user))
 
             # After we have the user data run whatever the page wants
             FB_init()
 
 # Starts the login procedure
 FB_login = ()->
-    FB.getLoginStatus (Response)->
-        if Response.status is 'connected'
-            FB_fetchInformation()
-        else
-            FB.login FB_fetchInformation
+    if sessionStorage.getItem('FB_user')?
+        FB_user = JSON.parse(sessionStorage.getItem('FB_user'))
+        FB_init()
+    else
+        FB.getLoginStatus (Response)->
+            if Response.status is 'connected'
+                FB_fetchInformation()
+            else
+                FB.login FB_fetchInformation

@@ -1,5 +1,7 @@
 var FB_init;
 
 FB_init = function() {
-  return console.log(FB_user);
+  console.log(FB_user);
+  $('#name').text(FB_user.name);
+  return $('body').show(0);
 };

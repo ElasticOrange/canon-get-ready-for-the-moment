@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('content')
-    Content
+    Hello <span id="name"></span>
 @stop
 
 @section('js')
