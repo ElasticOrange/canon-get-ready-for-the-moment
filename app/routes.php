@@ -11,5 +11,7 @@
 |
 */
 
-Route::get('/', 'HomeController@showWelcome');
-Route::post('/', 'HomeController@showWelcome');
+Route::get('', 'HomeController@showWelcome');
+Route::post('', 'HomeController@showWelcome');
+
+Route::resource('game', 'GameController');

@@ -3,9 +3,10 @@
 class HomeController extends BaseController {
 
     /**
+     * Constructor to set default values and load data all functions
+     * in this controller should use
      *
-     *
-     *
+     * return @void
      */
     public function __construct()
     {

@@ -1,4 +1,4 @@
-var FB_fetchInformation, FB_login, FB_user;
+var FB_display, FB_fetchInformation, FB_login, FB_user;
 
 window.fbAsyncInit = function() {
   FB.init({
@@ -11,6 +11,10 @@ window.fbAsyncInit = function() {
 };
 
 FB_user = null;
+
+FB_display = function() {
+  return $('body').show(0);
+};
 
 FB_fetchInformation = function() {
   return FB.api('/me', function(response) {

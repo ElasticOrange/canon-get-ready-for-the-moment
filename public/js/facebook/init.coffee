@@ -11,6 +11,10 @@ window.fbAsyncInit = () ->
 # The global user object, contains all the data Facebook returned
 FB_user = null
 
+# Display the body container
+FB_display = ()->
+    $('body').show(0)
+
 # This returns the user data and saves it in the global user object
 FB_fetchInformation = ()->
     FB.api \
