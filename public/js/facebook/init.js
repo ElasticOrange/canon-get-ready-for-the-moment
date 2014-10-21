@@ -19,13 +19,15 @@ FB_display = function() {
 FB_fetchInformation = function() {
   return FB.api('/me', function(response) {
     FB_user = response;
-    sessionStorage.setItem('FB_user', JSON.stringify(FB_user));
+    if (Modernizr.sessionstorage) {
+      sessionStorage.setItem('FB_user', JSON.stringify(FB_user));
+    }
     return FB_init();
   });
 };
 
 FB_login = function() {
-  if (sessionStorage.getItem('FB_user') != null) {
+  if (Modernizr.sessionstorage && (sessionStorage.getItem('FB_user') != null)) {
     FB_user = JSON.parse(sessionStorage.getItem('FB_user'));
     return FB_init();
   } else {

@@ -22,14 +22,15 @@ FB_fetchInformation = ()->
         , (response)->
             # Save the user object
             FB_user = response
-            sessionStorage.setItem('FB_user', JSON.stringify(FB_user))
+            if Modernizr.sessionstorage
+                sessionStorage.setItem('FB_user', JSON.stringify(FB_user))
 
             # After we have the user data run whatever the page wants
             FB_init()
 
 # Starts the login procedure
 FB_login = ()->
-    if sessionStorage.getItem('FB_user')?
+    if Modernizr.sessionstorage and sessionStorage.getItem('FB_user')?
         FB_user = JSON.parse(sessionStorage.getItem('FB_user'))
         FB_init()
     else
