@@ -1,6 +1,5 @@
-FB_init = ()->
-    console.log FB_user
+page_init = ()->
+    console.log 'done'
 
-    $('#name').text FB_user.name
-
-    FB_display()
+    $('.button-descopera').click ()->
+        window.location = '/game'

@@ -1,7 +1,8 @@
-var FB_init;
+var page_init;
 
-FB_init = function() {
-  console.log(FB_user);
-  $('#name').text(FB_user.name);
-  return FB_display();
+page_init = function() {
+  console.log('done');
+  return $('.button-descopera').click(function() {
+    return window.location = '/game';
+  });
 };

@@ -43,3 +43,8 @@ FB_login = ()->
             else
                 FB.login FB_fetchInformation
 
+FB_init = ()->
+    FB_display()
+    if page_init?
+        page_init()
+

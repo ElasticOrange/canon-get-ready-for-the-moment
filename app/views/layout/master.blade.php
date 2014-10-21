@@ -25,7 +25,7 @@
 
         <div class="container-main">
             @yield('content')
-            <div class="logo"><img src="img/logo.png"/></div>
+            <div class="logo"><img src="/img/logo.png"/></div>
         </div>
 
         <script src="/js/vendor/jquery.js"></script>

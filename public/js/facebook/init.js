@@ -1,4 +1,4 @@
-var FB_display, FB_fetchInformation, FB_login, FB_user;
+var FB_display, FB_fetchInformation, FB_init, FB_login, FB_user;
 
 window.fbAsyncInit = function() {
   FB.init({
@@ -42,5 +42,12 @@ FB_login = function() {
         return FB.login(FB_fetchInformation);
       }
     });
+  }
+};
+
+FB_init = function() {
+  FB_display();
+  if (typeof page_init !== "undefined" && page_init !== null) {
+    return page_init();
   }
 };
