@@ -100,10 +100,12 @@ textarea {
 
 
 .container-main{
+    position:relative;
+    background-color:white;
     margin:auto;
     width:760px;
     height:900px;
-    background-color: ;
+    background-color:;
 }
 
 .container-picture{
@@ -113,6 +115,7 @@ textarea {
     width: 760px;
     height: 507px;
     background-color: red;
+
 }
 
 .obiective{
@@ -148,8 +151,10 @@ textarea {
 }
 
 .logo{
-    margin-top: 30px;
-    float:right;
+    position:absolute;
+    top: 537px;
+    left: 528px;
+
     height:128px;
     width:188px;
     display:inline-block;
@@ -179,14 +184,84 @@ textarea {
 }
 
 
+.container-opacity{
+    width: 570px;
+    height: 380px;
+    margin: auto;
+    margin-top: 128px;
 
+}
 
+.mainpic{
+    margin:auto;
+    overflow:hidden;
+    background-image: url('../img/img-full.png');
+    background-position:center bottom;
+    height:379px;
+    width:570px;
+    margin-top: 128px;
+}
 
+.op-greylayer{
+    z-index:2;
+    margin-top: -508px;
+    width:570px;
+    height:380px;
+}
 
+.op-arrowleft{
+    z-index:3;
+    margin-top: -280px;
+    margin-left: 65px;
+    width:107px;
+    height:199px;
+}
 
+.op-text{
+    text-align:center;
+    margin:auto;
+    text-transform: uppercase;
+    font-size: 28px;
+    color:white;
+    width:200px;
+    height: 100px;
+    margin-top:-140px;
+}
 
+.op-arrowright{
+    clear:left;
+    z-index: 3;
+    width:107px;
+    height:199px;
+    margin-left: 400px;
+    margin-top:-160px;
+}
 
+.obiectivkit1{
 
+    margin-top:-53px;
+    margin-left: 40px;
+}
+
+.obiectivtext1{
+    font-size: 23px;
+    display: block;
+
+}
+.obiectivtext2{
+    width:120px;
+    clear:both;
+    display:inline;
+}
+
+.container-text{
+    position:absolute;
+    top:515px;
+    left:210px;
+    clear:both;
+    width:290px;
+
+    }
 
 
 
