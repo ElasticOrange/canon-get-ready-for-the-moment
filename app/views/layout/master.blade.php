@@ -1,11 +1,15 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Foundation | Welcome</title>
-        <link rel="stylesheet" href="/css/foundation.css" />
-        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/style.css">
         <script src="/js/vendor/modernizr.js"></script>
     </head>
     <body>
@@ -19,14 +23,13 @@
             }(document, 'script', 'facebook-jssdk'));
         </script>
 
-        @yield('content')
+        <div class="container-main">
+            @yield('content')
+            <div class="logo"><img src="img/logo.png"/></div>
+        </div>
 
-        <script src="js/vendor/jquery.js"></script>
-        <script src="js/foundation.min.js"></script>
-        <script src="js/facebook/init.js"></script>
+        <script src="/js/vendor/jquery.js"></script>
+        <script src="/js/facebook/init.js"></script>
         @yield('js')
-        <script>
-            $(document).foundation();
-        </script>
   </body>
 </html>

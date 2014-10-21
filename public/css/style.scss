@@ -2,3 +2,20 @@ body
 {
     display: none;
 }
+
+.button-descopera {
+    border-radius: 3px;
+    border: 0px;
+    background-color: #ffffff;
+    background: -webkit-linear-gradient(90deg, #e7e7e7 0%, #ffffff 100%);
+    background: -moz-linear-gradient(90deg, #e7e7e7 0%, #ffffff 100%);
+    background: -o-linear-gradient(90deg, #e7e7e7 0%, #ffffff 100%);
+    background: -ms-linear-gradient(90deg, #e7e7e7 0%, #ffffff 100%);
+    background: linear-gradient(0deg, #e7e7e7 0%, #ffffff 100%);
+    width: 116px;
+    height: 29px;
+    margin: auto;
+    left: 320px;
+    position: relative;
+    margin-top: 16px;
+}

@@ -20,10 +20,13 @@ FB_fetchInformation = ()->
     FB.api \
         '/me'
         , (response)->
-            # Save the user object
-            FB_user = response
-            if Modernizr.sessionstorage
-                sessionStorage.setItem('FB_user', JSON.stringify(FB_user))
+            if response.error?
+                FB_user = null
+            else
+                # Save the user object
+                FB_user = response
+                if Modernizr.sessionstorage
+                    sessionStorage.setItem('FB_user', JSON.stringify(FB_user))
 
             # After we have the user data run whatever the page wants
             FB_init()
@@ -39,3 +42,4 @@ FB_login = ()->
                 FB_fetchInformation()
             else
                 FB.login FB_fetchInformation
+
