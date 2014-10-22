@@ -33,7 +33,7 @@ arrows_in = function() {
 };
 
 page_init = function() {
-  var goto_step_1;
+  var goto_step_1, goto_step_2;
   console.log('game');
   goto_step_1 = function() {
     if (current_step === 0) {
@@ -41,6 +41,26 @@ page_init = function() {
         return true;
       });
       return current_step = 1;
+    }
+  };
+  goto_step_2 = function() {
+    var greyoverlay_fadeout_duration, kit_to_wide_duration;
+    if (current_step === 1) {
+      kit_to_wide_duration = 1000;
+      greyoverlay_fadeout_duration = 500;
+      return $('.grey-container').fadeOut(greyoverlay_fadeout_duration, function() {
+        return $('.picture-container').animate({
+          height: '507px',
+          width: '760px',
+          top: '0'
+        }, kit_to_wide_duration, function() {
+          return $('.obiectiv-kit').fadeOut(400, function() {
+            $('.obiectiv-wide').fadeIn();
+            $('.text-container-title').text('Canon altu');
+            return $('.text-container-description').text('Canon descriere');
+          });
+        });
+      });
     }
   };
   setTimeout(function() {
@@ -52,7 +72,7 @@ page_init = function() {
       parent_offset = $(this).parent().offset();
       coordinate_x = e.pageX - parent_offset.left;
       coordinate_y = e.pageY - parent_offset.top;
-      if (((coordinate_x >= 80) && (coordinate_x <= 160)) || ((coordinate_x >= 570) && (coordiante_x <= 650))) {
+      if (((coordinate_x >= 80) && (coordinate_x <= 160)) || ((coordinate_x >= 570) && (coordinate_x <= 650))) {
         return goto_step_1();
       }
     }
@@ -60,16 +80,6 @@ page_init = function() {
   $('.grey-text').mouseover(arrows_out);
   $('.grey-text').mouseout(arrows_in);
   return $('.grey-text').click(function(e) {
-    var greyoverlay_fadeout_duration, kit_to_wide_duration;
-    current_step = 2;
-    kit_to_wide_duration = 1000;
-    greyoverlay_fadeout_duration = 500;
-    return $('.grey-container').fadeOut(greyoverlay_fadeout_duration, function() {
-      return $('.picture-container').animate({
-        height: '507px',
-        width: '760px',
-        top: '0'
-      }, kit_to_wide_duration);
-    });
+    return goto_step_2();
   });
 };

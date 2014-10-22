@@ -52,6 +52,33 @@ page_init = ()->
                     true
             current_step = 1
 
+    goto_step_2 = ()->
+        if current_step is 1
+            kit_to_wide_duration = 1000
+            greyoverlay_fadeout_duration = 500
+
+            $('.grey-container').fadeOut \
+                greyoverlay_fadeout_duration
+                , ()->
+                    $('.picture-container').animate \
+                    {
+                        height: '507px'
+                        , width: '760px'
+                        , top: '0'
+                    }
+                    , kit_to_wide_duration
+                    , ()->
+                        # Hide the kit objective
+                        $('.obiectiv-kit').fadeOut \
+                            400
+                            , ()->
+                                # Fadein the wide objective
+                                $('.obiectiv-wide').fadeIn()
+
+                                # Display the wide texts
+                                $('.text-container-title').text('Canon altu')
+                                $('.text-container-description').text('Canon descriere')
+
     # Wait a few seconds or until the user mouses over the margins
     setTimeout \
         ()->
@@ -65,7 +92,7 @@ page_init = ()->
             coordinate_x = e.pageX - parent_offset.left
             coordinate_y = e.pageY - parent_offset.top
 
-            if ((coordinate_x >= 80) and (coordinate_x <= 160)) or ((coordinate_x >= 570) and (coordiante_x <= 650))
+            if ((coordinate_x >= 80) and (coordinate_x <= 160)) or ((coordinate_x >= 570) and (coordinate_x <= 650))
                 goto_step_1()
 
     # Animate arrows on mouseover
@@ -76,20 +103,8 @@ page_init = ()->
 
     # Send to step 2
     $('.grey-text').click (e)->
-        current_step = 2
+        goto_step_2()
 
-        kit_to_wide_duration = 1000
-        greyoverlay_fadeout_duration = 500
 
-        $('.grey-container').fadeOut \
-            greyoverlay_fadeout_duration
-            , ()->
-                $('.picture-container').animate \
-                {
-                    height: '507px'
-                    , width: '760px'
-                    , top: '0'
-                }
-                , kit_to_wide_duration
 
 
