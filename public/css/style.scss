@@ -39,6 +39,7 @@ body
 {
     background-image: url('../img/img-full.png');
     background-position: center bottom;
+
     height: 379px;
     width: 570px;
 
@@ -128,7 +129,6 @@ body
     top: 530px;
 
     z-index: 5;
-
 }
 
 .text-container-title {
@@ -137,4 +137,61 @@ body
 
 .text-container-description {
     font-size: 15px;
+}
+
+.girl-head {
+    //background-color: red;
+    width: 95px;
+    height: 115px;
+
+    display: none;
+
+    top: 330px;
+    position: absolute;
+    left: 120px;
+}
+
+.circle-girl {
+    display: none;
+    position: absolute;
+
+    top: 140px;
+    left: 147px;
+
+    @include hand();
+
+    border-radius: 50%;
+}
+
+.circle-girl-text {
+    @extend .indemn;
+
+    display: none;
+    position: absolute;
+    top: 290px;
+    left: 310px;
+    width: 150px;
+
+    @include hand();
+}
+
+.indemn{
+    text-transform: uppercase;
+    font-size: 28px;
+    color: white;
+    line-height: 1;
+    z-index: 3;
+    text-align: center;
+}
+
+.picture-portrait {
+    background-image: url('../img/img-portrait.png');
+    background-position: center bottom;
+
+    position: absolute;
+    top: 0px;
+    width: 760px;
+    height: 507px;
+
+    display: none;
 }

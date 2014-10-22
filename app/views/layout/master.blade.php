@@ -30,6 +30,7 @@
 
         <script src="/js/vendor/jquery.js"></script>
         <script src="/js/vendor/jquery-ui.min.js"></script>
+        <script src="/js/vendor/jquery.animate-shadow-min.js"></script>
         <script src="/js/vendor/underscore-min.js"></script>
         <script src="/js/facebook/init.js"></script>
         @yield('js')

@@ -1,7 +1,17 @@
 @extends('layout.master')
 
 @section('content')
-    <div class="picture-container"></div>
+    <div class="picture-container">
+        <div class="girl-head"></div>
+        <div class="circle-girl-container">
+            <img class="circle-girl" src="/img/circle-girl.png" />
+            <span class="circle-girl-text">Vrei mai clar?</span>
+        </div>
+    </div>
+
+    <div class="picture-portrait">
+        <div class=""></div>
+    </div>
 
     <div class="grey-container">
         <img class="grey-overlay" src="/img/op-greylayer.png" />

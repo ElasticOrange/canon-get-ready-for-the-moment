@@ -100,12 +100,52 @@ goto_step_2 = ()->
                     $('.obiectiv-kit').fadeOut \
                         400
                         , ()->
+                            current_step = 2
+
                             # Fadein the wide objective
                             $('.obiectiv-wide').fadeIn()
 
                             # Display the wide texts
                             $('.text-container').html(_.template($('#texts-wide').html()))
 
+                            # Display hidden div to active the chick's head
+                            $('.girl-head').show()
+                            $('.girl-head').mouseover ()->
+                                $('.circle-girl').stop(true).fadeIn()
+                                $('.circle-girl-text').stop(true).fadeIn()
+
+                            $('.circle-girl-container').mouseenter ()->
+                                $('.circle-girl').stop(true, true).animate \
+                                    boxShadow: '0px 0px 15px #fff'
+                                    , 100
+                            $('.circle-girl-container').mouseleave ()->
+                                $('.circle-girl').stop(true, true).animate \
+                                    boxShadow: '0px 0px 0px #fff'
+                                    , 100
+
+                            $('.circle-girl-container').click ()->
+                                goto_step_3()
+
+goto_step_3 = ()->
+    if current_step is 2
+        current_step = 3
+        $('.circle-girl-container').fadeOut()
+
+        zoom_duration = 1000
+
+        $('.picture-container').css \
+            'background-size': '100%'
+            , 'background-position-x': '0px'
+            , 'background-position-y': '0px'
+
+        $('.picture-container').animate \
+            'background-size': '300%'
+            , 'background-position-x': '-160px'
+            , 'background-position-y': '-910px'
+            , zoom_duration
+
+        $('.picture-container').fadeOut(zoom_duration)
+        $('.picture-portrait').fadeIn(zoom_duration)
 
 page_init = ()->
     console.log 'game'
