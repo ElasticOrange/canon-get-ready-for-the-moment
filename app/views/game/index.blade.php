@@ -11,14 +11,29 @@
     </div>
 
     <img class="obiectiv-kit" src="/img/obiectiv-kit1.png">
+    <img class="obiectiv-wide" src="/img/obiectiv-kit1.png">
+    <img class="obiectiv-portret" src="/img/obiectiv-kit1.png">
+    <img class="obiectiv-tele" src="/img/obiectiv-kit1.png">
     <div class="text-container">
+    </div>
+
+    <script type="text/template" id="texts-kit">
         <span class="text-container-title">
             Canon EF-S
         </span><br />
         <span class="text-container-description">
             Texte despre acest obiectiv si descrierea acestuia.Texte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuia
         </span>
-    </div>
+    </script>
+
+    <script type="text/template" id="texts-wide">
+        <span class="text-container-title">
+            Canon EF-S Wide
+        </span><br />
+        <span class="text-container-description">
+            Texte despre acest obiectiv si descrierea acestuia.Texte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuia WIDE
+        </span>
+    </script>
 @stop
 
 @section('js')
