@@ -29,6 +29,12 @@ body
     margin-right: auto;
 }
 
+@mixin hand()
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
 .picture-container
 {
     background-image: url('../img/img-full.png');
@@ -49,6 +55,8 @@ body
     left: 0;
 
     width: 760px;
+
+    display: none;
 }
 
 .grey-overlay {
@@ -77,6 +85,8 @@ body
 
     z-index: 3;
 
+    @include hand();
+
 }
 
 .arrow-left {
@@ -99,8 +109,14 @@ body
 }
 
 .text-container {
-    width: 268px;
-    height: 127px;
+    width: 280px;
+
+    position: absolute;
+    left: 200px;
+    top: 530px;
+
+    z-index: 5;
+
 }
 
 .text-container-title {

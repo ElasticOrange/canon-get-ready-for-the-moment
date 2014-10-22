@@ -32,7 +32,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 760px; }
+  width: 760px;
+  display: none; }
 
 .grey-overlay {
   position: relative;
@@ -55,7 +56,9 @@ body {
   font-size: 28px;
   color: white;
   line-height: 1;
-  z-index: 3; }
+  z-index: 3;
+  cursor: pointer;
+  cursor: hand; }
 
 .arrow-left {
   position: absolute;
@@ -74,21 +77,16 @@ body {
   top: 453px; }
 
 .text-container {
-    width: 280px;
-
-    position: absolute;
-    left: 200px;
-    top: 530px;
-
-    z-index: 5;
-}
+  width: 280px;
+  position: absolute;
+  left: 200px;
+  top: 530px;
+  z-index: 5; }
 
 .text-container-title {
   font-size: 24px; }
 
 .text-container-description {
-    font-size: 15px;
-    line-height: 0.6;
-}
+  font-size: 15px; }
 
 /*# sourceMappingURL=style.css.map */

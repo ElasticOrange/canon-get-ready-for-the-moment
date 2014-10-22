@@ -29,6 +29,7 @@
         </div>
 
         <script src="/js/vendor/jquery.js"></script>
+        <script src="/js/vendor/jquery-ui.min.js"></script>
         <script src="/js/facebook/init.js"></script>
         @yield('js')
   </body>
