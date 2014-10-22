@@ -143,9 +143,13 @@ goto_step_3 = ()->
             , 'background-position-x': '-160px'
             , 'background-position-y': '-910px'
             , zoom_duration
+            , 'easeInQuad'
 
         $('.picture-container').fadeOut(zoom_duration)
-        $('.picture-portrait').fadeIn(zoom_duration)
+        setTimeout \
+            ()->
+                $('.picture-portrait').fadeIn(zoom_duration)
+            , zoom_duration / 2
 
 page_init = ()->
     console.log 'game'

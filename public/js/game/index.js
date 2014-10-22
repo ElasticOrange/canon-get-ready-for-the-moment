@@ -124,9 +124,11 @@ goto_step_3 = function() {
       'background-size': '300%',
       'background-position-x': '-160px',
       'background-position-y': '-910px'
-    }, zoom_duration);
+    }, zoom_duration, 'easeInQuad');
     $('.picture-container').fadeOut(zoom_duration);
-    return $('.picture-portrait').fadeIn(zoom_duration);
+    return setTimeout(function() {
+      return $('.picture-portrait').fadeIn(zoom_duration);
+    }, zoom_duration / 2);
   }
 };
 
@@ -134,3 +136,5 @@ page_init = function() {
   console.log('game');
   return goto_step_0();
 };
+
+//# sourceMappingURL=index.map
