@@ -2,15 +2,35 @@
 
 @section('content')
     <div class="picture-container">
+        <!-- Portrait -->
         <div class="girl-head"></div>
         <div class="circle-girl-container">
             <img class="circle-girl" src="/img/circle-girl.png" />
             <span class="circle-girl-text">Vrei mai clar?</span>
         </div>
+        <!-- /Portrait -->
+
+        <!-- Tele -->
+        <div class="boy-head"></div>
+        <div class="circle-boy-container">
+            <img class="circle-boy" src="/img/circle-boy.png" />
+            <span class="circle-boy-text">Vrei mai aproape?</span>
+        </div>
+        <!-- /Tele -->
     </div>
 
     <div class="picture-portrait">
-        <div class=""></div>
+        <div class="back-button-container">
+            <img src="/img/back-button.png" /><br />
+            <span>Inapoi</span>
+        </div>
+    </div>
+
+    <div class="picture-tele">
+        <div class="back-button-container">
+            <img src="/img/back-button.png" /><br />
+            <span>Inapoi</span>
+        </div>
     </div>
 
     <div class="grey-container">

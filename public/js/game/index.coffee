@@ -6,39 +6,27 @@ arrow_animation_easing = 'easeOutBounce'
 
 arrows_out = ()->
     $('.arrow-left').stop(true, true).animate \
-        {
-         left: '-=40px'
-        }
+        left: '-=40px'
         , arrow_animation_duration
         , arrow_animation_easing
-        , ()->
-            true
+        , ()-> true
     $('.arrow-right').stop(true, true).animate \
-        {
-         left: '+=40px'
-        }
+        left: '+=40px'
         , arrow_animation_duration
         , arrow_animation_easing
-        , ()->
-            true
+        , ()-> true
 
 arrows_in = ()->
     $('.arrow-left').stop(true, true).animate \
-        {
-         left: '+=40px'
-        }
+        left: '+=40px'
         , arrow_animation_duration
         , arrow_animation_easing
-        , ()->
-            true
+        , ()-> true
     $('.arrow-right').stop(true, true).animate \
-        {
-         left: '-=40px'
-        }
+        left: '-=40px'
         , arrow_animation_duration
         , arrow_animation_easing
-        , ()->
-            true
+        , ()-> true
 
 # Step 0
 goto_step_0 = ()->
@@ -111,8 +99,17 @@ goto_step_2 = ()->
                             # Display hidden div to active the chick's head
                             $('.girl-head').show()
                             $('.girl-head').mouseover ()->
-                                $('.circle-girl').stop(true).fadeIn()
-                                $('.circle-girl-text').stop(true).fadeIn()
+                                if current_step is 2
+                                    $('.circle-girl').stop(true).fadeIn()
+                                    $('.circle-girl-text').stop(true).fadeIn()
+
+                            # Display the hidden circle div if the user waits for 10 seconds
+                            setTimeout \
+                                ()->
+                                    if current_step is 2
+                                        $('.circle-girl').stop(true).fadeIn()
+                                        $('.circle-girl-text').stop(true).fadeIn()
+                                , 10000
 
                             $('.circle-girl-container').mouseenter ()->
                                 $('.circle-girl').stop(true, true).animate \
@@ -126,12 +123,12 @@ goto_step_2 = ()->
                             $('.circle-girl-container').click ()->
                                 goto_step_3()
 
+zoom_duration = 1000
+
 goto_step_3 = ()->
     if current_step is 2
         current_step = 3
         $('.circle-girl-container').fadeOut()
-
-        zoom_duration = 1000
 
         $('.picture-container').css \
             'background-size': '100%'
@@ -150,6 +147,105 @@ goto_step_3 = ()->
             ()->
                 $('.picture-portrait').fadeIn(zoom_duration)
             , zoom_duration / 2
+
+        # Display the back button
+        $('.back-button-container').show(0).fadeIn()
+        # Add fade events on the back button
+        $('.back-button-container').mouseenter ()->
+            $(@).animate \
+                opacity: 0.9
+        $('.back-button-container').mouseleave ()->
+            $(@).animate \
+                opacity: 0.5
+        # Go back to big picture on click
+        $('.back-button-container').click ()->
+            goto_step_4()
+
+# Step 4: Back to big picture from the portrait
+goto_step_4 = ()->
+    if current_step is 3
+        current_step = 4
+
+        $('.picture-container').animate \
+            'background-size': '100%'
+            , 'background-position-x': '0px'
+            , 'background-position-y': '0px'
+            , zoom_duration
+            , 'easeOutQuad'
+
+        $('.picture-container').css({display: 'block'}).fadeIn(zoom_duration)
+        $('.picture-portrait').fadeOut(zoom_duration)
+
+        $('.back-button-container').fadeOut(zoom_duration)
+
+        # Prepare for tele
+        # Display hidden div to active the chick's head
+        $('.boy-head').show()
+        $('.boy-head').mouseover ()->
+            if current_step is 4
+                $('.circle-boy').stop(true).fadeIn()
+                $('.circle-boy-text').stop(true).fadeIn()
+
+        # Display the hidden circle div if the user waits for 10 seconds
+        setTimeout \
+            ()->
+                if current_step is 4
+                    $('.circle-boy').stop(true).fadeIn()
+                    $('.circle-boy-text').stop(true).fadeIn()
+            , 10000
+
+        $('.circle-boy-container').mouseenter ()->
+            $('.circle-boy').stop(true, true).animate \
+                boxShadow: '0px 0px 15px #fff'
+                , 100
+        $('.circle-boy-container').mouseleave ()->
+            $('.circle-boy').stop(true, true).animate \
+                boxShadow: '0px 0px 0px #fff'
+                , 100
+
+        $('.circle-boy-container').click ()->
+            goto_step_5()
+
+# Step 5: Tele obiectiv
+goto_step_5 = ()->
+    if current_step is 4
+        current_step = 5
+        $('.circle-boy-container').fadeOut()
+
+        # Zoom in
+        $('.picture-container').css \
+            'background-size': '100%'
+            , 'background-position-x': '0px'
+            , 'background-position-y': '0px'
+
+        $('.picture-container').animate \
+            'background-size': '390%'
+            , 'background-position-x': '-1760px'
+            , 'background-position-y': '-1310px'
+            , zoom_duration
+            , 'easeInQuad'
+
+        $('.picture-container').fadeOut(zoom_duration)
+        setTimeout \
+            ()->
+                $('.picture-tele').fadeIn(zoom_duration)
+            , zoom_duration / 2
+
+        # Display the back button
+        $('.back-button-container').show(0).fadeIn()
+        # Add fade events on the back button
+        $('.back-button-container').mouseenter ()->
+            $(@).animate \
+                opacity: 0.9
+        $('.back-button-container').mouseleave ()->
+            $(@).animate \
+                opacity: 0.5
+        # Go back to big picture on click
+        $('.back-button-container').click ()->
+            goto_step_6()
+
+goto_step_6 = ()->
+    true
 
 page_init = ()->
     console.log 'game'

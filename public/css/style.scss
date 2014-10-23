@@ -195,3 +195,69 @@ body
 
     display: none;
 }
+
+.back-button-container
+{
+    z-index: 5;
+
+    display: none;
+    opacity: 0.5;
+
+    position: absolute;
+    top: 420px;
+    left: 680px;
+    text-align: center;
+
+    color: white;
+    font-weight: 700;
+
+    @include hand();
+}
+
+.boy-head {
+    //background-color: red;
+    width: 45px;
+    height: 45px;
+
+    display: none;
+
+    top: 384px;
+    position: absolute;
+    left: 530px;
+}
+
+.circle-boy {
+    display: none;
+    position: absolute;
+
+    top: 153px;
+    left: 261px;
+
+    @include hand();
+
+    border-radius: 50%;
+}
+
+.circle-boy-text {
+    @extend .indemn;
+
+    display: none;
+    position: absolute;
+    top: 290px;
+    left: 310px;
+    width: 150px;
+
+    @include hand();
+}
+
+.picture-tele {
+    background-image: url('../img/img-tele.png');
+    background-position: center bottom;
+
+    position: absolute;
+    top: 0px;
+    width: 760px;
+    height: 507px;
+
+    display: none;
+}
