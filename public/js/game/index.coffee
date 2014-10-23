@@ -145,7 +145,17 @@ goto_step_3 = ()->
         $('.picture-container').fadeOut(zoom_duration)
         setTimeout \
             ()->
-                $('.picture-portrait').fadeIn(zoom_duration)
+                $('.picture-portrait').fadeIn \
+                    zoom_duration
+                    , ()->
+                        # Fadein the portrait objective
+                        $('.obiectiv-wide').fadeOut \
+                            400
+                            , ()->
+                                $('.obiectiv-portrait').fadeIn()
+
+                                # Display the portrait texts
+                                $('.text-container').html(_.template($('#texts-portrait').html()))
             , zoom_duration / 2
 
         # Display the back button
@@ -228,7 +238,17 @@ goto_step_5 = ()->
         $('.picture-container').fadeOut(zoom_duration)
         setTimeout \
             ()->
-                $('.picture-tele').fadeIn(zoom_duration)
+                $('.picture-tele').fadeIn \
+                    zoom_duration
+                    , ()->
+
+                        $('.obiectiv-portret').fadeOut \
+                            400
+                            , ()->
+                                $('.obiectiv-tele').fadeIn()
+
+                                # Display the tele texts
+                                $('.text-container').html(_.template($('#texts-tele').html()))
             , zoom_duration / 2
 
         # Display the back button

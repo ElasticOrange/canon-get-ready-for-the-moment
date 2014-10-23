@@ -49,19 +49,37 @@
 
     <script type="text/template" id="texts-kit">
         <span class="text-container-title">
-            Canon EF-S
+            Canon EF-S 18-135mm f/3.5-5.6 IS STM
         </span><br />
         <span class="text-container-description">
-            Texte despre acest obiectiv si descrierea acestuia.Texte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuia
+            Texte despre acest obiectiv si descrierea acestuia.Texte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuia KIT
         </span>
     </script>
 
     <script type="text/template" id="texts-wide">
         <span class="text-container-title">
-            Canon EF-S Wide
+            Canon EF-S 10-18mm f/4.5-5.6 IS STM
         </span><br />
         <span class="text-container-description">
             Texte despre acest obiectiv si descrierea acestuia.Texte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuia WIDE
+        </span>
+    </script>
+
+    <script type="text/template" id="texts-portrait">
+        <span class="text-container-title">
+            Canon EF 50mm f/1.8 II
+        </span><br />
+        <span class="text-container-description">
+            Texte despre acest obiectiv si descrierea acestuia.Texte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuia PORTRAIT
+        </span>
+    </script>
+
+    <script type="text/template" id="texts-tele">
+        <span class="text-container-title">
+            Canon EF-S 55-250mm f/4-5.6 IS STM
+        </span><br />
+        <span class="text-container-description">
+            Texte despre acest obiectiv si descrierea acestuia.Texte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuia TELE
         </span>
     </script>
 @stop

@@ -134,7 +134,12 @@ goto_step_3 = function() {
     }, zoom_duration, 'easeInQuad');
     $('.picture-container').fadeOut(zoom_duration);
     setTimeout(function() {
-      return $('.picture-portrait').fadeIn(zoom_duration);
+      return $('.picture-portrait').fadeIn(zoom_duration, function() {
+        return $('.obiectiv-wide').fadeOut(400, function() {
+          $('.obiectiv-portrait').fadeIn();
+          return $('.text-container').html(_.template($('#texts-portrait').html()));
+        });
+      });
     }, zoom_duration / 2);
     $('.back-button-container').show(0).fadeIn();
     $('.back-button-container').mouseenter(function() {
@@ -211,7 +216,12 @@ goto_step_5 = function() {
     }, zoom_duration, 'easeInQuad');
     $('.picture-container').fadeOut(zoom_duration);
     setTimeout(function() {
-      return $('.picture-tele').fadeIn(zoom_duration);
+      return $('.picture-tele').fadeIn(zoom_duration, function() {
+        return $('.obiectiv-portret').fadeOut(400, function() {
+          $('.obiectiv-tele').fadeIn();
+          return $('.text-container').html(_.template($('#texts-tele').html()));
+        });
+      });
     }, zoom_duration / 2);
     $('.back-button-container').show(0).fadeIn();
     $('.back-button-container').mouseenter(function() {
