@@ -8,7 +8,6 @@ body {
     background-color:white;
     margin:auto;
     width:760px;
-    background-color:;
 }
 
 .container-picture{
@@ -17,38 +16,44 @@ body {
     margin:auto;
     width: 760px;
     height: 507px;
-    background-color:;
-
 }
 
 .obiective{
-    margin-top:-79px;
+    top: 350px;
     margin-right: 6px;
-    position:relative;
+    position:absolute;
     z-index:2;
-    position:relative;
     float:left;
 }
 
+.objectives{
+  top :480px;
+
+}
+/*dif = 34*/
+.obiective-submit{
+  top:480px;
+}
+
 .obiectiv_unu{
-    margin-left:25px;
+    left:20px;
     width:106px;
     height:117px;
 }
 .obiectiv_doi{
-    bottom:49px;
-    margin-bottom:55px;
+
+    left:140px;
     width:116px;
     height:164px;
 }
 
 .obiectiv_trei{
-    bottom:82px;
+    left:260px;
     width:114px;
     height:199px;
 }
 .obiectiv_patru{
-    top:40px;
+    left:380px;
     width:112px;
     height:80px;
 }
@@ -75,7 +80,7 @@ body {
 }
 
 .text-intro2{
-    width:256px;
+    width:260px;
     margin-top:-358px;
 }
 
@@ -89,13 +94,13 @@ body {
     color: white;
     margin: auto;
     width: 240px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .text-intro-second2{
     width: 272px;
-    height:35px;
-}
+    margin-top: 10px;
+  }
 
 .adress-email{
   position:absolute;
@@ -108,7 +113,6 @@ body {
   padding-left:10px;
   padding-right:10px;
   font-size: 18px;
-  color:#999999;
 }
 
 .submit-button{
@@ -124,20 +128,18 @@ body {
 }
 
 .radio-container{
-  text-align:center;
-  background-color: blue;
-  margin-left:auto;
-  margin-right:auto;
-  width:340px;
-  color:#fff;
-  margin-top:15px;
-  font-size:18px;
-  }
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+  color: #fff;
+  margin-top: 15px;
+  font-size: 18px;
+}
 
-  .obiectiv-margin{
-    margin-right:13px;
-  }
-
+.obiectiv-margin{
+  margin-right:13px;
+}
 
 .container-opacity{
     width: 570px;
@@ -275,10 +277,11 @@ body {
   top: 223px; }
 
 .obiectiv-kit {
+  display: none;
   position: absolute;
   z-index: 4;
-  left: 45px;
-  top: 453px; }
+  left: 70px;
+  top: 445px; }
 
 .text-container {
     width: 280px;
@@ -296,4 +299,10 @@ body {
 .text-container-description {
     font-size: 15px;
     line-height: 0.6;
+}
+
+.error{
+  color: #fff;
+  background-color: #AB0000;
+  box-shadow: inset 0px 0px 7px 5px #FFFFFF;
 }

@@ -31,6 +31,7 @@ arrows_in = ()->
 # Step 0
 goto_step_0 = ()->
     $('.text-container').html(_.template($('#texts-kit').html()))
+    $('#obiectiv-kit').show(0)
 
 # Step 1 (Obiectiv kit)
 goto_step_1 = ()->
@@ -85,13 +86,13 @@ goto_step_2 = ()->
                 , kit_to_wide_duration
                 , ()->
                     # Hide the kit objective
-                    $('.obiectiv-kit').fadeOut \
+                    $('#obiectiv-kit').fadeOut \
                         400
                         , ()->
                             current_step = 2
 
                             # Fadein the wide objective
-                            $('.obiectiv-wide').fadeIn()
+                            $('#obiectiv-wide').fadeIn()
 
                             # Display the wide texts
                             $('.text-container').html(_.template($('#texts-wide').html()))
@@ -149,10 +150,10 @@ goto_step_3 = ()->
                     zoom_duration
                     , ()->
                         # Fadein the portrait objective
-                        $('.obiectiv-wide').fadeOut \
+                        $('#obiectiv-wide').fadeOut \
                             400
                             , ()->
-                                $('.obiectiv-portrait').fadeIn()
+                                $('#obiectiv-portrait').fadeIn()
 
                                 # Display the portrait texts
                                 $('.text-container').html(_.template($('#texts-portrait').html()))
@@ -242,10 +243,10 @@ goto_step_5 = ()->
                     zoom_duration
                     , ()->
 
-                        $('.obiectiv-portret').fadeOut \
+                        $('#obiectiv-portrait').fadeOut \
                             400
                             , ()->
-                                $('.obiectiv-tele').fadeIn()
+                                $('#obiectiv-tele').fadeIn()
 
                                 # Display the tele texts
                                 $('.text-container').html(_.template($('#texts-tele').html()))
@@ -265,7 +266,7 @@ goto_step_5 = ()->
             goto_step_6()
 
 goto_step_6 = ()->
-    window.location = '/intrebare'
+    window.location = '/inscriere'
     true
 
 page_init = ()->

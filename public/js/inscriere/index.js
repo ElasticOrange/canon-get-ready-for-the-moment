@@ -11,7 +11,7 @@ page_init = function() {
   return $('#submit-obiectiv').click(function(e) {
     e.preventDefault();
     $('#intrebare-container').html(_.template($('#intrebare-final').html()));
-    return $('#submit-email').click(function(e) {
+    $('#submit-email').click(function(e) {
       var p, selected_value;
       e.preventDefault();
       selected_value = $('[type=radio]:checked').length ? $('[type=radio]:checked').val() : 1;
@@ -24,8 +24,15 @@ page_init = function() {
         email: $('[type=email]').val()
       };
       return $.post('/inscriere', p, function(s, t) {
-        return true;
+        if (s.status === "Saved") {
+          return alert('Salvat! Trebuie sa implementam si un mesaj de ok');
+        }
       }, 'json');
+    });
+    return $('.adress-email').keyup(function(e) {
+      if ($(this).val() === '') {
+        return $('.adress-email').removeClass('error');
+      }
     });
   });
 };

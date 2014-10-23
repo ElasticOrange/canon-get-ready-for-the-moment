@@ -33,7 +33,8 @@ arrows_in = function() {
 };
 
 goto_step_0 = function() {
-  return $('.text-container').html(_.template($('#texts-kit').html()));
+  $('.text-container').html(_.template($('#texts-kit').html()));
+  return $('#obiectiv-kit').show(0);
 };
 
 goto_step_1 = function() {
@@ -80,9 +81,9 @@ goto_step_2 = function() {
         width: '760px',
         top: '0'
       }, kit_to_wide_duration, function() {
-        $('.obiectiv-kit').fadeOut(400, function() {
+        $('#obiectiv-kit').fadeOut(400, function() {
           current_step = 2;
-          $('.obiectiv-wide').fadeIn();
+          $('#obiectiv-wide').fadeIn();
           $('.text-container').html(_.template($('#texts-wide').html()));
           $('.girl-head').show();
           $('.girl-head').mouseover(function() {
@@ -135,8 +136,8 @@ goto_step_3 = function() {
     $('.picture-container').fadeOut(zoom_duration);
     setTimeout(function() {
       return $('.picture-portrait').fadeIn(zoom_duration, function() {
-        return $('.obiectiv-wide').fadeOut(400, function() {
-          $('.obiectiv-portrait').fadeIn();
+        return $('#obiectiv-wide').fadeOut(400, function() {
+          $('#obiectiv-portrait').fadeIn();
           return $('.text-container').html(_.template($('#texts-portrait').html()));
         });
       });
@@ -217,8 +218,8 @@ goto_step_5 = function() {
     $('.picture-container').fadeOut(zoom_duration);
     setTimeout(function() {
       return $('.picture-tele').fadeIn(zoom_duration, function() {
-        return $('.obiectiv-portret').fadeOut(400, function() {
-          $('.obiectiv-tele').fadeIn();
+        return $('#obiectiv-portrait').fadeOut(400, function() {
+          $('#obiectiv-tele').fadeIn();
           return $('.text-container').html(_.template($('#texts-tele').html()));
         });
       });
@@ -241,7 +242,7 @@ goto_step_5 = function() {
 };
 
 goto_step_6 = function() {
-  window.location = '/intrebare';
+  window.location = '/inscriere';
   return true;
 };
 

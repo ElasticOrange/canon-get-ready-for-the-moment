@@ -10,7 +10,7 @@ page_init = ()->
 
         $('#intrebare-container').html(_.template($('#intrebare-final').html()))
 
-        # Set the event after the template was loaded
+        # Set the event on submit after the template was loaded
         $('#submit-email').click (e)->
             e.preventDefault()
 
@@ -28,7 +28,12 @@ page_init = ()->
                 '/inscriere'
                 , p
                 , (s, t)->
-                    true
+                    if s.status is "Saved"
+                        alert('Salvat! Trebuie sa implementam si un mesaj de ok')
                 , 'json'
 
+        # Set the change event on the email input
+        $('.adress-email').keyup (e)->
+            if $(@).val() is ''
+                $('.adress-email').removeClass 'error'
 
