@@ -265,6 +265,7 @@ goto_step_5 = ()->
             goto_step_6()
 
 goto_step_6 = ()->
+    window.location = '/intrebare'
     true
 
 page_init = ()->

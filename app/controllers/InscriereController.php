@@ -1,6 +1,6 @@
 <?php
 
-class GameController extends \BaseController {
+class InscriereController extends \BaseController {
 
     /**
      * Constructor to set default values and load data all functions
@@ -15,18 +15,18 @@ class GameController extends \BaseController {
 
     /**
      * Display a listing of the resource.
-     * GET /game
+     * GET /intrebare
      *
      * @return Response
      */
     public function index()
     {
-        return View::make('game/index', $this->return_data);
+        return View::make('inscriere/index', $this->return_data);
     }
 
     /**
      * Show the form for creating a new resource.
-     * GET /game/create
+     * GET /intrebare/create
      *
      * @return Response
      */
@@ -37,18 +37,32 @@ class GameController extends \BaseController {
 
     /**
      * Store a newly created resource in storage.
-     * POST /game
+     * POST /intrebare
      *
      * @return Response
      */
     public function store()
     {
-        //
+        if (Inscriere::where('email', Input::get('email'))->count())
+        {
+            return Response::json([
+                'status' => 'Already in the campaign'
+            ]);
+        }
+
+        $inscriere = new Inscriere;
+        $inscriere->obiectiv = Input::get('obiectiv');
+        $inscriere->email = Input::get('email');
+        $inscriere->save();
+
+        return Response::json([
+            'status' => 'Saved'
+        ]);
     }
 
     /**
      * Display the specified resource.
-     * GET /game/{id}
+     * GET /intrebare/{id}
      *
      * @param  int  $id
      * @return Response
@@ -60,7 +74,7 @@ class GameController extends \BaseController {
 
     /**
      * Show the form for editing the specified resource.
-     * GET /game/{id}/edit
+     * GET /intrebare/{id}/edit
      *
      * @param  int  $id
      * @return Response
@@ -72,7 +86,7 @@ class GameController extends \BaseController {
 
     /**
      * Update the specified resource in storage.
-     * PUT /game/{id}
+     * PUT /intrebare/{id}
      *
      * @param  int  $id
      * @return Response
@@ -84,7 +98,7 @@ class GameController extends \BaseController {
 
     /**
      * Remove the specified resource from storage.
-     * DELETE /game/{id}
+     * DELETE /intrebare/{id}
      *
      * @param  int  $id
      * @return Response

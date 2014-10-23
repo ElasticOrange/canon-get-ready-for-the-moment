@@ -241,6 +241,7 @@ goto_step_5 = function() {
 };
 
 goto_step_6 = function() {
+  window.location = '/intrebare';
   return true;
 };
 
