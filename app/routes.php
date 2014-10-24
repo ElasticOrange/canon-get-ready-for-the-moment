@@ -16,3 +16,4 @@ Route::post('', 'HomeController@showWelcome');
 
 Route::resource('game', 'GameController');
 Route::resource('inscriere', 'InscriereController');
+Route::resource('final', 'FinalController');

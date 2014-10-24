@@ -91,6 +91,10 @@ body {
     line-height: 1;
 }
 
+.text-intro-final{
+  margin-top:-280px;
+}
+
 .text-intro-second{
     text-align: center;
     color: white;
