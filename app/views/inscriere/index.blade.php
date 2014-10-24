@@ -3,24 +3,26 @@
 @section('content')
     <img src="/img/pagina_intro.png" />
     <div id="intrebare-container">
-        <div class="text-intro text-intro3">Care a fost obiectivul ce ti-a placut cel mai mult?</div>
+        <div class="text-intro text-intro3">
+            Acum că ai parcurs toată aplicaţia noastră, alege obiectivul tău preferat şi intră     automat în competiţia pentru a câştiga unul din obiectivele noastre Canon.
+        </div>
 
         <div class="radio-container">
             <form>
                 <input type="radio" name="Obiectiv" id="obiectiv-1" class="obiectiv-margin">
-                <label for="obiectiv-1">EF-S 10-18mm</label>
+                <label for="obiectiv-1">EF-S 18-135mm f/3.5-5.6 IS STM</label>
                 <br />
 
                 <input type="radio" name="Obiectiv" id="obiectiv-2" class="obiectiv-margin">
-                <label for="obiectiv-2">EF-S 18-135mm</label>
+                <label for="obiectiv-2">EF-S 10-18mm f/4.5-5.6 IS STM</label>
                 <br />
 
                 <input type="radio" name="Obiectiv" id="obiectiv-3" class="obiectiv-margin">
-                <label for="obiectiv-3">EF-S 55-250mm</label>
+                <label for="obiectiv-3">EF 50mm f/1.8 II</label>
                 <br />
 
                 <input type="radio" name="Obiectiv" id="obiectiv-4" class="obiectiv-margin">
-                <label for="obiectiv-4">EF 50mm</label>
+                <label for="obiectiv-4">EF-S 55-250mm f/4-5.6 IS STM</label>
                 <br />
             </form>
         </div>
@@ -36,8 +38,8 @@
     <!--Obiective-->
 
     <script type="text/template" id="intrebare-final">
-        <div class="text-intro text-intro2">Felicitari ai intrat automat in tragerea la sorti pentru un obiectiv Canon</div>
-        <div class="text-intro-second text-intro-second2">Lasa-ne adresa ta de email pentru a fi inregistrat pe lista de candidati</div>
+        <div class="text-intro text-intro2">Felicitări! Ai intrat automat în cursa pentru a câştiga un obiectiv Canon!</div>
+        <div class="text-intro-second text-intro-second2">Te rugăm să ne laşi datele tale de contact pentru autentificare.</div>
         <input type="email" class="adress-email" placeholder="e-mail" />
         <input id="submit-email" type="submit" class="submit-button" value="Submit" />
     </script>

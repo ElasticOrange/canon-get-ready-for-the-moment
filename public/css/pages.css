@@ -81,12 +81,14 @@ body {
 
 .text-intro2{
     width:260px;
-    margin-top:-358px;
+    margin-top:-368px;
 }
 
 .text-intro3{
-    width:189px;
-    margin-top:-388px;
+    width:220px;
+    margin-top:-378px;
+    font-size: 18px;
+    line-height: 1;
 }
 
 .text-intro-second{
@@ -131,14 +133,14 @@ body {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  width: 170px;
+  width: 240px;
   color: #fff;
   margin-top: 15px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .obiectiv-margin{
-  margin-right:13px;
+
 }
 
 .container-opacity{
