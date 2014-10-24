@@ -123,16 +123,20 @@ goto_step_3 = function() {
   if (current_step === 2) {
     current_step = 3;
     $('.circle-girl-container').fadeOut();
-    $('.picture-container').css({
-      'background-size': '100%',
-      'background-position-x': '0px',
-      'background-position-y': '0px'
-    });
-    $('.picture-container').animate({
-      'background-size': '300%',
-      'background-position-x': '-160px',
-      'background-position-y': '-910px'
-    }, zoom_duration, 'easeInQuad');
+    if (Modernizr.bgpositionxy) {
+      $('.picture-container').css({
+        'background-size': '100%',
+        'background-position-x': '0px',
+        'background-position-y': '0px'
+      });
+      $('.picture-container').animate({
+        'background-size': '300%',
+        'background-position-x': '-160px',
+        'background-position-y': '-910px'
+      }, zoom_duration, 'easeInQuad');
+    } else {
+      console.log("FU Firefox");
+    }
     $('.picture-container').fadeOut(zoom_duration);
     setTimeout(function() {
       return $('.picture-portrait').fadeIn(zoom_duration, function() {
@@ -162,11 +166,15 @@ goto_step_3 = function() {
 goto_step_4 = function() {
   if (current_step === 3) {
     current_step = 4;
-    $('.picture-container').animate({
-      'background-size': '100%',
-      'background-position-x': '0px',
-      'background-position-y': '0px'
-    }, zoom_duration, 'easeOutQuad');
+    if (Modernizr.bgpositionxy) {
+      $('.picture-container').animate({
+        'background-size': '100%',
+        'background-position-x': '0px',
+        'background-position-y': '0px'
+      }, zoom_duration, 'easeOutQuad');
+    } else {
+      console.log('FU Firefox again');
+    }
     $('.picture-container').css({
       display: 'block'
     }).fadeIn(zoom_duration);
@@ -205,16 +213,18 @@ goto_step_5 = function() {
   if (current_step === 4) {
     current_step = 5;
     $('.circle-boy-container').fadeOut();
-    $('.picture-container').css({
-      'background-size': '100%',
-      'background-position-x': '0px',
-      'background-position-y': '0px'
-    });
-    $('.picture-container').animate({
-      'background-size': '390%',
-      'background-position-x': '-1760px',
-      'background-position-y': '-1310px'
-    }, zoom_duration, 'easeInQuad');
+    if (Modernizr.bgpositionxy) {
+      $('.picture-container').css({
+        'background-size': '100%',
+        'background-position-x': '0px',
+        'background-position-y': '0px'
+      });
+      $('.picture-container').animate({
+        'background-size': '390%',
+        'background-position-x': '-1760px',
+        'background-position-y': '-1310px'
+      }, zoom_duration, 'easeInQuad');
+    }
     $('.picture-container').fadeOut(zoom_duration);
     setTimeout(function() {
       return $('.picture-tele').fadeIn(zoom_duration, function() {

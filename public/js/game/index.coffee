@@ -131,17 +131,20 @@ goto_step_3 = ()->
         current_step = 3
         $('.circle-girl-container').fadeOut()
 
-        $('.picture-container').css \
-            'background-size': '100%'
-            , 'background-position-x': '0px'
-            , 'background-position-y': '0px'
+        if (Modernizr.bgpositionxy)
+            $('.picture-container').css \
+                'background-size': '100%'
+                , 'background-position-x': '0px'
+                , 'background-position-y': '0px'
 
-        $('.picture-container').animate \
-            'background-size': '300%'
-            , 'background-position-x': '-160px'
-            , 'background-position-y': '-910px'
-            , zoom_duration
-            , 'easeInQuad'
+            $('.picture-container').animate \
+                'background-size': '300%'
+                , 'background-position-x': '-160px'
+                , 'background-position-y': '-910px'
+                , zoom_duration
+                , 'easeInQuad'
+        else
+            console.log "FU Firefox"
 
         $('.picture-container').fadeOut(zoom_duration)
         setTimeout \
@@ -177,12 +180,15 @@ goto_step_4 = ()->
     if current_step is 3
         current_step = 4
 
-        $('.picture-container').animate \
-            'background-size': '100%'
-            , 'background-position-x': '0px'
-            , 'background-position-y': '0px'
-            , zoom_duration
-            , 'easeOutQuad'
+        if (Modernizr.bgpositionxy)
+            $('.picture-container').animate \
+                'background-size': '100%'
+                , 'background-position-x': '0px'
+                , 'background-position-y': '0px'
+                , zoom_duration
+                , 'easeOutQuad'
+        else
+            console.log 'FU Firefox again'
 
         $('.picture-container').css({display: 'block'}).fadeIn(zoom_duration)
         $('.picture-portrait').fadeOut(zoom_duration)
@@ -224,17 +230,18 @@ goto_step_5 = ()->
         $('.circle-boy-container').fadeOut()
 
         # Zoom in
-        $('.picture-container').css \
-            'background-size': '100%'
-            , 'background-position-x': '0px'
-            , 'background-position-y': '0px'
+        if (Modernizr.bgpositionxy)
+            $('.picture-container').css \
+                'background-size': '100%'
+                , 'background-position-x': '0px'
+                , 'background-position-y': '0px'
 
-        $('.picture-container').animate \
-            'background-size': '390%'
-            , 'background-position-x': '-1760px'
-            , 'background-position-y': '-1310px'
-            , zoom_duration
-            , 'easeInQuad'
+            $('.picture-container').animate \
+                'background-size': '390%'
+                , 'background-position-x': '-1760px'
+                , 'background-position-y': '-1310px'
+                , zoom_duration
+                , 'easeInQuad'
 
         $('.picture-container').fadeOut(zoom_duration)
         setTimeout \
