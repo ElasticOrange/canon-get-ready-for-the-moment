@@ -99,8 +99,9 @@ body {
     text-align: center;
     color: white;
     margin: auto;
-    width: 240px;
+    width: 260px;
     margin-top: 10px;
+    line-height: 1.4;
 }
 
 .text-intro-second2{
@@ -141,6 +142,7 @@ body {
   color: #fff;
   margin-top: 15px;
   font-size: 14px;
+  line-height: 1.4;
 }
 
 .obiectiv-margin{

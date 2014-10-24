@@ -28,8 +28,7 @@ page_init = ()->
                 '/inscriere'
                 , p
                 , (s, t)->
-                    if s.status is "Saved"
-                        alert('Salvat! Trebuie sa implementam si un mesaj de ok')
+                    window.location = '/final'
                 , 'json'
 
         # Set the change event on the email input

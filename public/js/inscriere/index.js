@@ -24,9 +24,7 @@ page_init = function() {
         email: $('[type=email]').val()
       };
       return $.post('/inscriere', p, function(s, t) {
-        if (s.status === "Saved") {
-          return alert('Salvat! Trebuie sa implementam si un mesaj de ok');
-        }
+        return window.location = '/final';
       }, 'json');
     });
     return $('.adress-email').keyup(function(e) {
