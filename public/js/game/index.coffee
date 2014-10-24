@@ -92,9 +92,8 @@ goto_step_2 = ()->
 
                     setTimeout \
                         ()->
-                            if not if not $('.cerc-profil').is(':visible')
-                                $('.cerc-profil').fadeIn()
-                        , 3000
+                            $('.cerc-profil').fadeIn()
+                        , 1000
 
                     # Hide the kit objective
                     $('#obiectiv-kit').fadeOut \
@@ -109,7 +108,10 @@ goto_step_2 = ()->
                             $('.girl-head').show()
                             $('.girl-head').mouseover ()->
                                 if current_step is 2
-                                    $('.cerc-profil').css({display: 'none'})
+                                    setTimeout \
+                                        ()->
+                                            $('.cerc-profil').css({display: 'none'})
+                                        , 400
                                     $('.circle-girl').stop(true).fadeIn()
                                     $('.circle-girl-text').stop(true).fadeIn()
 
@@ -117,7 +119,10 @@ goto_step_2 = ()->
                             setTimeout \
                                 ()->
                                     if current_step is 2
-                                        $('.cerc-profil').css({display: 'none'})
+                                        setTimeout \
+                                            ()->
+                                                $('.cerc-profil').css({display: 'none'})
+                                            , 400
                                         $('.circle-girl').stop(true).fadeIn()
                                         $('.circle-girl-text').stop(true).fadeIn()
                                 , 10000
@@ -208,19 +213,20 @@ goto_step_4 = ()->
 
         $('.back-button-container').fadeOut(zoom_duration)
 
-        #
         setTimeout \
             ()->
-                if not $('.cerc-trotineta').is(':visible')
-                    $('.cerc-trotineta').fadeIn()
-            , 3000
+                $('.cerc-trotineta').fadeIn()
+            , 1000
 
         # Prepare for tele
         # Display hidden div to active the guy's head
         $('.boy-head').show()
         $('.boy-head').mouseover ()->
             if current_step is 4
-                $('.cerc-trotineta').css({display: 'none'})
+                setTimeout \
+                    ()->
+                        $('.cerc-trotineta').css({display: 'none'})
+                    , 400
                 $('.circle-boy').stop(true).fadeIn()
                 $('.circle-boy-text').stop(true).fadeIn()
 
@@ -228,7 +234,10 @@ goto_step_4 = ()->
         setTimeout \
             ()->
                 if current_step is 4
-                    $('.cerc-trotineta').css({display: 'none'})
+                    setTimeout \
+                        ()->
+                            $('.cerc-trotineta').css({display: 'none'})
+                        , 400
                     $('.circle-boy').stop(true).fadeIn()
                     $('.circle-boy-text').stop(true).fadeIn()
             , 10000
@@ -250,6 +259,7 @@ goto_step_5 = ()->
     if current_step is 4
         current_step = 5
         $('.circle-boy-container').fadeOut()
+        $('.cerc-trotineta').css({display: 'none'})
 
         # Zoom in
         if (Modernizr.bgpositionxy)
