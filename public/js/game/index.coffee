@@ -85,6 +85,11 @@ goto_step_2 = ()->
                 }
                 , kit_to_wide_duration
                 , ()->
+                    # Display the wide texts
+                    $('.text-container').fadeOut ()->
+                        $('.text-container').html(_.template($('#texts-wide').html()))
+                        $('.text-container').fadeIn()
+
                     # Hide the kit objective
                     $('#obiectiv-kit').fadeOut \
                         400
@@ -93,9 +98,6 @@ goto_step_2 = ()->
 
                             # Fadein the wide objective
                             $('#obiectiv-wide').fadeIn()
-
-                            # Display the wide texts
-                            $('.text-container').html(_.template($('#texts-wide').html()))
 
                             # Display hidden div to active the chick's head
                             $('.girl-head').show()
@@ -152,14 +154,17 @@ goto_step_3 = ()->
                 $('.picture-portrait').fadeIn \
                     zoom_duration
                     , ()->
+                        # Display the portrait texts
+                        $('.text-container').fadeOut ()->
+                            $('.text-container').html(_.template($('#texts-portrait').html()))
+                            $('.text-container').fadeIn()
+
                         # Fadein the portrait objective
                         $('#obiectiv-wide').fadeOut \
                             400
                             , ()->
                                 $('#obiectiv-portrait').fadeIn()
 
-                                # Display the portrait texts
-                                $('.text-container').html(_.template($('#texts-portrait').html()))
             , zoom_duration / 2
 
         # Display the back button
@@ -249,14 +254,15 @@ goto_step_5 = ()->
                 $('.picture-tele').fadeIn \
                     zoom_duration
                     , ()->
+                        # Display the tele texts
+                        $('.text-container').fadeOut ()->
+                            $('.text-container').html(_.template($('#texts-tele').html()))
+                            $('.text-container').fadeIn()
 
                         $('#obiectiv-portrait').fadeOut \
                             400
                             , ()->
                                 $('#obiectiv-tele').fadeIn()
-
-                                # Display the tele texts
-                                $('.text-container').html(_.template($('#texts-tele').html()))
             , zoom_duration / 2
 
         # Display the back button
