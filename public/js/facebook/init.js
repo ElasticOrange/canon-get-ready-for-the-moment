@@ -1,53 +1,56 @@
-var FB_display, FB_fetchInformation, FB_init, FB_login, FB_user;
 
-window.fbAsyncInit = function() {
-  FB.init({
-    appId: '790652110980620',
-    xfbml: true,
-    version: 'v2.1',
-    status: true
-  });
-  return FB_login();
-};
+/*
+ * Init the Facebook application
+window.fbAsyncInit = () ->
+    FB.init \
+        appId      : '790652110980620',
+        xfbml      : true,
+        version    : 'v2.1',
+        status     : true
 
-FB_user = null;
+    FB_login()
 
-FB_display = function() {
-  return $('body').show(0);
-};
+ * The global user object, contains all the data Facebook returned
+FB_user = null
 
-FB_fetchInformation = function() {
-  return FB.api('/me', function(response) {
-    if (response.error != null) {
-      FB_user = null;
-    } else {
-      FB_user = response;
-      if (Modernizr.sessionstorage) {
-        sessionStorage.setItem('FB_user', JSON.stringify(FB_user));
-      }
-    }
-    return FB_init();
-  });
-};
+ * Display the body container
+FB_display = ()->
+    $('body').show(0)
 
-FB_login = function() {
-  if (Modernizr.sessionstorage && (sessionStorage.getItem('FB_user') != null)) {
-    FB_user = JSON.parse(sessionStorage.getItem('FB_user'));
-    return FB_init();
-  } else {
-    return FB.getLoginStatus(function(Response) {
-      if (Response.status === 'connected') {
-        return FB_fetchInformation();
-      } else {
-        return FB.login(FB_fetchInformation);
-      }
-    });
-  }
-};
+ * This returns the user data and saves it in the global user object
+FB_fetchInformation = ()->
+    FB.api \
+        '/me'
+        , (response)->
+            if response.error?
+                FB_user = null
+            else
+                 * Save the user object
+                FB_user = response
+                if Modernizr.sessionstorage
+                    sessionStorage.setItem('FB_user', JSON.stringify(FB_user))
 
-FB_init = function() {
-  FB_display();
-  if (typeof page_init !== "undefined" && page_init !== null) {
-    return page_init();
-  }
-};
+             * After we have the user data run whatever the page wants
+            FB_init()
+
+ * Starts the login procedure
+FB_login = ()->
+    if Modernizr.sessionstorage and sessionStorage.getItem('FB_user')?
+        FB_user = JSON.parse(sessionStorage.getItem('FB_user'))
+        FB_init()
+    else
+        FB.getLoginStatus (Response)->
+            if Response.status is 'connected'
+                FB_fetchInformation()
+            else
+                FB.login FB_fetchInformation
+
+FB_init = ()->
+    FB_display()
+    if page_init?
+        page_init()
+ */
+$(function() {
+  $('body').show(0);
+  return page_init();
+});

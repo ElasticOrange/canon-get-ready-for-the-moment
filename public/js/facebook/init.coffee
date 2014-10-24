@@ -1,3 +1,4 @@
+###
 # Init the Facebook application
 window.fbAsyncInit = () ->
     FB.init \
@@ -47,4 +48,9 @@ FB_init = ()->
     FB_display()
     if page_init?
         page_init()
+###
 
+$ ->
+    $('body').show(0)
+    # FB_init()
+    page_init()
