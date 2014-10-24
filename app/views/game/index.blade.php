@@ -6,7 +6,7 @@
         <div class="girl-head"></div>
         <div class="circle-girl-container">
             <img class="circle-girl" src="/img/circle-girl.png" />
-            <span class="circle-girl-text">Vrei mai clar?</span>
+            <span class="circle-girl-text">Vreţi un portret perfect?</span>
         </div>
         <!-- /Portrait -->
 
@@ -35,7 +35,7 @@
 
     <div class="grey-container">
         <img class="grey-overlay" src="/img/op-greylayer.png" />
-        <span class="grey-text">Incadreaza mai mult</span>
+        <span class="grey-text">Vrei să cuprinzi mai mult?</span>
         <img class="arrow-left" src="/img/op-arrowleft.png" />
         <img class="arrow-right" src="/img/op-arrowright.png" />
     </div>
@@ -47,39 +47,60 @@
     <div class="text-container">
     </div>
 
+
     <script type="text/template" id="texts-kit">
         <span class="text-container-title">
             Canon EF-S 18-135mm f/3.5-5.6 IS STM
         </span><br />
         <span class="text-container-description">
-            Texte despre acest obiectiv si descrierea acestuia.Texte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuia KIT
+            Perfect pentru început, obiectivul Canon EF-S 18-135mm f/3.5-5.6 IS STM este un obiectiv
+            pentru uz general, care vă permite un zoom in şi mai mare, astfel încât obiectele aflate la
+            distanță par mai aproape şi va ajută să surprindeți detalii interesante, peisaje sau să cuprindeţi
+            mai mult. Obiectivul beneficiază și de tehnologie STM pentru focalizare discretă şi silenţioasă
+            atunci când filmați un clip video. Încercaţi să setaţi obiectivul la plajă focală maximă (18mm),
+            apropiaţi-vă de subiect şi fotografia va oferi senzaţia implicării dvs. direct în scena respectivă.
         </span>
     </script>
 
     <script type="text/template" id="texts-wide">
         <span class="text-container-title">
-            Canon EF-S 10-18mm f/4.5-5.6 IS STM
+            Obiectivul EF-S 10-18mm f/4.5-5.6 IS STM
         </span><br />
         <span class="text-container-description">
-            Texte despre acest obiectiv si descrierea acestuia.Texte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuia WIDE
+            Uneori este imposibil să vă mai îndepărtați, chiar și cu un pas! Obiectivul EF-S 10-18mm f/4.5-
+            5.6 IS STM, cu zoom ultra-grandangular cu plajă focală 10-18 mm, vă ajută să cuprindeţi mai
+            mult în cadru, chiar şi atunci când sunteţi aproape de subiect, astfel încât să puteţi surprinde
+            mai mult în fiecare fotografie realizată, fără a fi nevoiţi să vă îndepărtaţi foarte mult de cadrul
+            fotografiat. Stabilizatorul de Imagine vă va ajuta să obţineţi întotdeauna fotografii mai clare.
+            Încercaţi atunci când fotografiaţi un peisaj să îndreptaţi aparatul uşor în jos, astfel veţi obţine
+            aşa-numitul efect de “linii directoare”, ce vor ghida privirea.
         </span>
     </script>
 
     <script type="text/template" id="texts-portrait">
         <span class="text-container-title">
-            Canon EF 50mm f/1.8 II
+            Obiectivul EF 50mm f/1.8 II
         </span><br />
         <span class="text-container-description">
-            Texte despre acest obiectiv si descrierea acestuia.Texte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuia PORTRAIT
+            Cu ajutorul obiectivul EF 50mm f/1.8 II puteţi crea emoția vizuală necesară oricărui portret
+            şi este ideal pentru estomparea fundalurilor deoarece are o diafragmă mare de 3,5 ori mai
+            mare decât cea a obiectivului zoom standard EF-S 18-55mm f/3.5-5.6 IS STM. Estomparea
+            fundalului într-o fotografie atrage atenţia asupra celui mai important element din cadru –
+            persoana fotografiată. Încercaţi să setaţi aparatul în modul Av, pentru a putea seta diafragma
+            dorită (nu uitaţi că diafragma mare este dată de valoare mică) apoi focalizaţi pe partea pe care o
+            doriţi să fie clară, apăsând la jumătate butonul declanşator înainte de a fotografia.
         </span>
     </script>
 
     <script type="text/template" id="texts-tele">
         <span class="text-container-title">
-            Canon EF-S 55-250mm f/4-5.6 IS STM
+            Obiectivul EF-S 55-250mm f/4-5.6 IS STM
         </span><br />
         <span class="text-container-description">
-            Texte despre acest obiectiv si descrierea acestuia.Texte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuiaTexte despre acest obiectiv si descrierea acestuia TELE
+            Obiectivul EF-S 55-250mm f/4-5.6 IS STM vă ajută atunci când aveți nevoie să vă apropiați
+            mai mult, dar nu aveți cum. Acest obiectiv zoom telefoto face ca obiectele de la distanță să
+            pară mult mai aproape, astfel încât să vă puteți apropia de acțiune. Ideal pentru fotografierea
+            scenelor de viață sălbatică, sport sau atunci când nu puteți fizic să vă apropiați de subiect.
         </span>
     </script>
 @stop
