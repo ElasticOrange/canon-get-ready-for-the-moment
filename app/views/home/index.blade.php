@@ -3,9 +3,11 @@
 @section('content')
     <div class="container-picture">
         <img src="img/pagina_intro.png"/>
-        <div class="text-intro">Descopera obiectiviele Canon STM si poti castiga unul gratuit</div>
-        <div class="text-intro-second">Plimba-te cu mouse-ul si afla ce obiectiv ti se potriveste</div>
-        <button type="button" class="button-descopera">Descopera</button>
+        <div class="text-intro">Aparatul foto reprezintă doar jumătate din povestea unei fotografii!</div>
+        <div class="text-intro-second">Cealaltă jumătate o
+reprezintă obiectivele. Descoperă ce obiectiv ţi se potriveşte, care sunt secretele lor şi intră
+automat în competiţie pentru a câştiga un obiectiv CANON</div>
+        <button type="button" class="button-descopera">Intră în aplicaţie aici!</button>
     </div>
 
     <!--Obiective-->
