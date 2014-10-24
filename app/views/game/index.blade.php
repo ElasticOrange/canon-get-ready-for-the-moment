@@ -22,14 +22,14 @@
     <div class="picture-portrait">
         <div class="back-button-container">
             <img src="/img/back-button.png" /><br />
-            <span>Inapoi</span>
+            <span>Continuă</span>
         </div>
     </div>
 
     <div class="picture-tele">
         <div class="back-button-container">
             <img src="/img/back-button.png" /><br />
-            <span>Inapoi</span>
+            <span>Continuă</span>
         </div>
     </div>
 
