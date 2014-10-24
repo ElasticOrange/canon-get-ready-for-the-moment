@@ -46,7 +46,7 @@ goto_step_1 = ()->
 setTimeout \
     ()->
         goto_step_1()
-    , 10000
+    , 5000
 
 # Display the grey overlay if the user mouses over the sides of the image
 $('.picture-container').mousemove (e)->
@@ -110,7 +110,7 @@ goto_step_2 = ()->
                                     if current_step is 2
                                         $('.circle-girl').stop(true).fadeIn()
                                         $('.circle-girl-text').stop(true).fadeIn()
-                                , 10000
+                                , 5000
 
                             $('.circle-girl-container').mouseenter ()->
                                 $('.circle-girl').stop(true, true).animate \
@@ -203,7 +203,7 @@ goto_step_4 = ()->
                 if current_step is 4
                     $('.circle-boy').stop(true).fadeIn()
                     $('.circle-boy-text').stop(true).fadeIn()
-            , 10000
+            , 5000
 
         $('.circle-boy-container').mouseenter ()->
             $('.circle-boy').stop(true, true).animate \

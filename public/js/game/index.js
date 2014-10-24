@@ -48,7 +48,7 @@ goto_step_1 = function() {
 
 setTimeout(function() {
   return goto_step_1();
-}, 10000);
+}, 5000);
 
 $('.picture-container').mousemove(function(e) {
   var coordinate_x, coordinate_y, parent_offset;
@@ -97,7 +97,7 @@ goto_step_2 = function() {
               $('.circle-girl').stop(true).fadeIn();
               return $('.circle-girl-text').stop(true).fadeIn();
             }
-          }, 10000);
+          }, 5000);
         });
         $('.circle-girl-container').mouseenter(function() {
           return $('.circle-girl').stop(true, true).animate({
@@ -184,7 +184,7 @@ goto_step_4 = function() {
         $('.circle-boy').stop(true).fadeIn();
         return $('.circle-boy-text').stop(true).fadeIn();
       }
-    }, 10000);
+    }, 5000);
     $('.circle-boy-container').mouseenter(function() {
       return $('.circle-boy').stop(true, true).animate({
         boxShadow: '0px 0px 15px #fff'
