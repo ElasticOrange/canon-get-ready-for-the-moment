@@ -48,7 +48,7 @@ goto_step_1 = function() {
 
 setTimeout(function() {
   return goto_step_1();
-}, 5000);
+}, 10000);
 
 $('.picture-container').mousemove(function(e) {
   var coordinate_x, coordinate_y, parent_offset;
@@ -85,22 +85,31 @@ goto_step_2 = function() {
           $('.text-container').html(_.template($('#texts-wide').html()));
           return $('.text-container').fadeIn();
         });
+        setTimeout(function() {
+          return $('.cerc-profil').fadeIn();
+        }, 3000);
         $('#obiectiv-kit').fadeOut(400, function() {
           current_step = 2;
           $('#obiectiv-wide').fadeIn();
           $('.girl-head').show();
           $('.girl-head').mouseover(function() {
             if (current_step === 2) {
+              $('.cerc-profil').css({
+                display: 'none'
+              });
               $('.circle-girl').stop(true).fadeIn();
               return $('.circle-girl-text').stop(true).fadeIn();
             }
           });
           return setTimeout(function() {
             if (current_step === 2) {
+              $('.cerc-profil').css({
+                display: 'none'
+              });
               $('.circle-girl').stop(true).fadeIn();
               return $('.circle-girl-text').stop(true).fadeIn();
             }
-          }, 5000);
+          }, 10000);
         });
         $('.circle-girl-container').mouseenter(function() {
           return $('.circle-girl').stop(true, true).animate({
@@ -186,19 +195,30 @@ goto_step_4 = function() {
     }).fadeIn(zoom_duration);
     $('.picture-portrait').fadeOut(zoom_duration);
     $('.back-button-container').fadeOut(zoom_duration);
+    setTimeout(function() {
+      if (!$('.cerc-trotineta').is(':visible')) {
+        return $('.cerc-trotineta').fadeIn();
+      }
+    }, 3000);
     $('.boy-head').show();
     $('.boy-head').mouseover(function() {
       if (current_step === 4) {
+        $('.cerc-trotineta').css({
+          display: 'none'
+        });
         $('.circle-boy').stop(true).fadeIn();
         return $('.circle-boy-text').stop(true).fadeIn();
       }
     });
     setTimeout(function() {
       if (current_step === 4) {
+        $('.cerc-trotineta').css({
+          display: 'none'
+        });
         $('.circle-boy').stop(true).fadeIn();
         return $('.circle-boy-text').stop(true).fadeIn();
       }
-    }, 5000);
+    }, 10000);
     $('.circle-boy-container').mouseenter(function() {
       return $('.circle-boy').stop(true, true).animate({
         boxShadow: '0px 0px 15px #fff'

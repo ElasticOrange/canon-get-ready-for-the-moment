@@ -178,4 +178,18 @@ body {
   height: 507px;
   display: none; }
 
+.cerc-profil {
+  display: none;
+  position: absolute;
+  top: 322px;
+  left: 152px;
+  border-radius: 50%; }
+
+.cerc-trotineta {
+  display: none;
+  position: absolute;
+  top: 393px;
+  left: 537px;
+  border-radius: 50%; }
+
 /*# sourceMappingURL=style.css.map */
