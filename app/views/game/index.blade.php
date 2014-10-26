@@ -58,11 +58,12 @@
         <p class="text-container-description">
             Perfect pentru început, obiectivul Canon EF-S 18-135mm f/3.5-5.6 IS STM este un obiectiv
             pentru uz general, care vă permite un zoom in şi mai mare, astfel încât obiectele aflate la
-            distanță par mai aproape şi va ajută să surprindeți detalii interesante, peisaje sau să cuprindeţi
-            mai mult. Obiectivul beneficiază și de tehnologie STM pentru focalizare discretă şi silenţioasă
-            atunci când filmați un clip video. <br />
-            <strong>Încercaţi să setaţi obiectivul la plajă focală maximă (18mm),
-            apropiaţi-vă de subiect şi fotografia va oferi senzaţia implicării dvs. direct în scena respectivă.</strong>
+            distanță par mai aproape şi vă ajută să surprindeți detalii interesante, peisaje captivante sau
+            pur şi simplu să cuprindeţi mai mult în fotografiile voastre. Doriţi focalizare discretă şi
+            silenţioasă atunci când filmați un clip video? Nu este nici o problemă, obiectivul beneficiază și
+            de tehnologia STM.<br />
+            Încercaţi să setaţi obiectivul la plajă focală maximă (18mm), apropiaţi-vă
+            de subiect şi fotografia va oferi senzaţia implicării voastre direct în scena respectivă.
         </p>
     </script>
 
@@ -75,9 +76,11 @@
             5.6 IS STM, cu zoom ultra-grandangular cu plajă focală 10-18 mm, vă ajută să cuprindeţi mai
             mult în cadru, chiar şi atunci când sunteţi aproape de subiect, astfel încât să puteţi surprinde
             mai mult în fiecare fotografie realizată, fără a fi nevoiţi să vă îndepărtaţi foarte mult de cadrul
-            fotografiat. Stabilizatorul de Imagine vă va ajuta să obţineţi întotdeauna fotografii mai clare.<br />
-            <strong>Încercaţi atunci când fotografiaţi un peisaj să îndreptaţi aparatul uşor în jos, astfel veţi obţine
-            aşa-numitul efect de “linii directoare”, ce vor ghida privirea.</strong>
+            fotografiat. În plus, fotografiile voastre vor fi întotdeauna mai clare cu ajutorul Stabilizatorului
+            de Imagine.<br />
+            Atunci când fotografiaţi un peisaj, sfatul nostru este să încercaţi să îndreptaţi
+            aparatul uşor în jos, astfel veţi obţine aşa-numitul efect de “linii directoare”, ce vor ghida
+            privirea.
         </p>
     </script>
 
@@ -86,14 +89,13 @@
             Obiectivul EF 50mm f/1.8 II
         </span><br />
         <p class="text-container-description">
-            Cu ajutorul obiectivul EF 50mm f/1.8 II puteţi crea emoția vizuală necesară oricărui portret
-            şi este ideal pentru estomparea fundalurilor deoarece are o diafragmă mare de 3,5 ori mai
+            Cu ajutorul obiectivului EF 50mm f/1.8 II puteţi crea emoția vizuală necesară oricărui portret
+            şi este ideal pentru estomparea fundalurilor, deoarece are o diafragmă mare de 3,5 ori mai
             mare decât cea a obiectivului zoom standard EF-S 18-55mm f/3.5-5.6 IS STM. Estomparea
             fundalului într-o fotografie atrage atenţia asupra celui mai important element din cadru –
-            persoana fotografiată. <br />
-            <strong>Încercaţi să setaţi aparatul în modul Av, pentru a putea seta diafragma
-            dorită (nu uitaţi că diafragma mare este dată de valoare mică) apoi focalizaţi pe partea pe care o
-            doriţi să fie clară, apăsând la jumătate butonul declanşator înainte de a fotografia.</strong>
+            persoana fotografiată. Încercaţi să setaţi aparatul în modul Av, pentru a putea seta diafragma
+            dorită (nu uitaţi că diafragma mare este dată de valoarea mică) apoi focalizaţi pe partea pe care
+            o doriţi să fie clară, apăsând la jumătate butonul declanşator înainte de a fotografia.
         </p>
     </script>
 
@@ -102,11 +104,11 @@
             Obiectivul EF-S 55-250mm f/4-5.6 IS STM
         </span><br />
         <p class="text-container-description">
-            Obiectivul EF-S 55-250mm f/4-5.6 IS STM vă ajută atunci când aveți nevoie să vă apropiați
-            mai mult, dar nu aveți cum. Acest obiectiv zoom telefoto face ca obiectele de la distanță să
-            pară mult mai aproape, astfel încât să vă puteți apropia de acțiune. <br />
-            <strong>Ideal pentru fotografierea
-            scenelor de viață sălbatică, sport sau atunci când nu puteți fizic să vă apropiați de subiect.</strong>
+            Ați surprins o acţiune interesantă, dar este mult prea departe? Obiectivul EF-S 55-250mm f/4-
+            5.6 IS STM vă ajută atunci când aveți nevoie să vă apropiați mai mult, dar nu aveți cum. Acest
+            obiectiv zoom telefoto face ca obiectele de la distanță să pară mult mai aproape, astfel încât
+            să vă puteți apropia de acțiune. Ideal pentru fotografierea scenelor
+            atunci când nu puteți fizic să vă apropiați de subiect.
         </p>
     </script>
 @stop
