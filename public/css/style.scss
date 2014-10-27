@@ -36,8 +36,15 @@ body
     cursor: hand;
 }
 
+.hand
+{
+    @include hand();
+}
+
 .picture-container
 {
+    display: none;
+
     background-image: url('../img/img-full.png');
     background-position: center bottom;
 
@@ -273,4 +280,18 @@ body
     left: 680px;
     font-size: 10px;
     color: black;
+}
+.preview-box {
+    display: none;
+}
+
+.whiteness {
+    width: 760px;
+    height: 507px;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    z-index: 10;
 }

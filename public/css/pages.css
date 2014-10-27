@@ -18,6 +18,26 @@ body {
     height: 507px;
 }
 
+.container-picture-2{
+    background-image: url(../img/blur-look.png);
+    position:relative;
+    z-index:1;
+    margin:auto;
+    width: 760px;
+    height: 507px;
+}
+
+.picture-container-blur {
+    background-image: url('../img/center-finder.png');
+    background-position: center bottom;
+    height: 379px;
+    width: 570px;
+    position: relative;
+    top: 128px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .obiective{
     top: 350px;
     margin-right: 6px;
@@ -313,4 +333,61 @@ body {
   color: #fff;
   background-color: #AB0000;
   box-shadow: inset 0px 0px 7px 5px #FFFFFF;
+}
+
+.preview-box{
+  position:absolute;
+  z-index:4;
+  background-image: url(../img/preview-box.png);
+  width:242px;
+  height:209px;
+  top: 20px;
+  left:500px;
+}
+
+.preview-lens1{
+  margin-top:40px;
+  margin-left:5px;
+  background-image:url(../img/Obiective/obiectiv1-preview.png);
+  background-repeat: no-repeat;
+  height:153px;
+  width:90px;
+}
+
+.preview-lens2{
+  background-image:url(../img/Obiective/obiectiv2-preview.png);
+  margin-top:60px;
+  height:130px;
+  margin-left:10px;
+}
+
+.preview-lens3{
+  background-image:url(../img/Obiective/obiectiv3-preview.png);
+  margin-top:50px;
+  height:140px;
+  margin-left:10px;
+}
+
+.preview-lens4{
+  background-image:url(../img/Obiective/obiectiv4-preview.png);
+  margin-top:50px;
+  height:150px;
+  margin-left:10px;
+}
+
+.preview-title{
+  top:0px;
+  left:20px;
+  position:absolute;
+  color:white;
+  width:220px;
+}
+
+.preview-content{
+  position:absolute;
+  top:80px;
+  left:100px;
+  color:white;
+  width:130px;
+  font-size:12px;
 }

@@ -1,6 +1,13 @@
 @extends('layout.master')
 
 @section('content')
+    <div class="whiteness">
+    </div>
+
+    <div class="container-picture-2">
+        <div class="picture-container-blur hand"></div>
+    </div>
+
     <div class="picture-container">
         <!-- Portrait -->
         <div class="girl-head"></div>
@@ -21,6 +28,8 @@
 
     <img class="cerc-profil" src="/img/cerc-profil.png" />
     <img class="cerc-trotineta" src="/img/cerc-trotineta.png" />
+
+    <div class="preview-box"></div>
 
     <div class="picture-portrait">
         <div class="back-button-container">
@@ -50,6 +59,29 @@
     <div class="text-container">
     </div>
 
+    <script type="text/template" id="display_lens_1">
+        <div class="preview-lens1 preview-lens1"></div>
+        <div class="preview-title">Canon<br /> EF-S 18-135mm f/3.5-5.6 IS STM</div>
+        <div class="preview-content">Bullshit text 1</div>
+    </script>
+
+    <script type="text/template" id="display_lens_2">
+        <div class="preview-lens1 preview-lens2"></div>
+        <div class="preview-title">Canon<br /> EF-S 10-18mm f/4.5-5.6 IS STM</div>
+        <div class="preview-content">Pentru a avea o imagine mai </div>
+    </script>
+
+    <script type="text/template" id="display_lens_3">
+        <div class="preview-lens1 preview-lens3"></div>
+        <div class="preview-title">Canon<br /> EF 50mm f/1.8 II </div>
+        <div class="preview-content">Bullshit text 3</div>
+    </script>
+
+    <script type="text/template" id="display_lens_4">
+        <div class="preview-lens1 preview-lens4"></div>
+        <div class="preview-title">Canon<br /> EF-S 55-250mm f/4-5.6 IS STM </div>
+        <div class="preview-content">Bullshit text 4</div>
+    </script>
 
     <script type="text/template" id="texts-kit">
         <span class="text-container-title">
@@ -69,7 +101,7 @@
 
     <script type="text/template" id="texts-wide">
         <span class="text-container-title">
-            Obiectivul EF-S 10-18mm f/4.5-5.6 IS STM
+            Canon EF-S 10-18mm f/4.5-5.6 IS STM
         </span><br />
         <p class="text-container-description">
             Uneori este imposibil să vă mai îndepărtați, chiar și cu un pas! Obiectivul EF-S 10-18mm f/4.5-
@@ -86,7 +118,7 @@
 
     <script type="text/template" id="texts-portrait">
         <span class="text-container-title">
-            Obiectivul EF 50mm f/1.8 II
+            Canon EF 50mm f/1.8 II
         </span><br />
         <p class="text-container-description">
             Cu ajutorul obiectivului EF 50mm f/1.8 II puteţi crea emoția vizuală necesară oricărui portret
@@ -101,7 +133,7 @@
 
     <script type="text/template" id="texts-tele">
         <span class="text-container-title">
-            Obiectivul EF-S 55-250mm f/4-5.6 IS STM
+            Canon EF-S 55-250mm f/4-5.6 IS STM
         </span><br />
         <p class="text-container-description">
             Ați surprins o acţiune interesantă, dar este mult prea departe? Obiectivul EF-S 55-250mm f/4-

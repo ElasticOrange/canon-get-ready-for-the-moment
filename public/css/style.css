@@ -18,7 +18,12 @@ body {
   position: relative;
   margin-top: 8px; }
 
+.hand {
+  cursor: pointer;
+  cursor: hand; }
+
 .picture-container {
+  display: none;
   background-image: url("../img/img-full.png");
   background-position: center bottom;
   height: 379px;
@@ -198,3 +203,16 @@ body {
   left: 680px;
   font-size: 10px;
   color: black; }
+
+.preview-box {
+  display: none; }
+
+.whiteness {
+  width: 760px;
+  height: 507px;
+  background-color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  z-index: 10; }

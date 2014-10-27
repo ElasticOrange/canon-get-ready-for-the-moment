@@ -1,4 +1,11 @@
-current_step = 0
+current_step = -1
+
+# Load lens data for small box
+display_lens = (index)->
+    console.log "#{index} display_lens"
+
+    $('.preview-box').html(_.template($('#display_lens_'+index).html()))
+    true
 
 # Arrows animation for step 1
 arrow_animation_duration = 400
@@ -28,10 +35,51 @@ arrows_in = ()->
         , arrow_animation_easing
         , ()-> true
 
+# Step -1
+goto_step_minus_1 = ()->
+    current_step = -1
+
+    $('.picture-container-blur').mouseenter ()->
+        display_lens(1)
+
+    $('.picture-container-blur').hover \
+        ()->
+            $('.preview-box').stop(true).fadeIn()
+        , ()->
+            $('.preview-box').stop(true).fadeOut()
+
+    $('.picture-container-blur').click ()->
+        goto_step_0()
+
 # Step 0
 goto_step_0 = ()->
+    current_step = 0
+
+    $('.whiteness').show(0)
+
+    $('.container-picture-2').hide(0)
+    $('.picture-container').show(0)
+
+    $('.whiteness').fadeOut(900)
+
     $('.text-container').html(_.template($('#texts-kit').html()))
     $('#obiectiv-kit').show(0)
+
+    # Wait a few seconds or until the user mouses over the margins
+    setTimeout \
+        ()->
+            goto_step_1()
+        , 10000
+
+    # Display the grey overlay if the user mouses over the sides of the image
+    $('.picture-container').mousemove (e)->
+        if current_step is 0
+            parent_offset = $(@).parent().offset()
+            coordinate_x = e.pageX - parent_offset.left
+            coordinate_y = e.pageY - parent_offset.top
+
+            if ((coordinate_x >= 80) and (coordinate_x <= 160)) or ((coordinate_x >= 570) and (coordinate_x <= 650))
+                goto_step_1()
 
 # Step 1 (Obiectiv kit)
 goto_step_1 = ()->
@@ -42,31 +90,25 @@ goto_step_1 = ()->
                 true
         current_step = 1
 
-# Wait a few seconds or until the user mouses over the margins
-setTimeout \
-    ()->
-        goto_step_1()
-    , 10000
+        # Display lens 2
+        display_lens(2)
 
-# Display the grey overlay if the user mouses over the sides of the image
-$('.picture-container').mousemove (e)->
-    if current_step is 0
-        parent_offset = $(@).parent().offset()
-        coordinate_x = e.pageX - parent_offset.left
-        coordinate_y = e.pageY - parent_offset.top
+        # Display the box for lens
+        $('.grey-text').hover \
+            ()->
+                $('.preview-box').stop(true).fadeIn()
+            , ()->
+                $('.preview-box').stop(true).fadeOut()
 
-        if ((coordinate_x >= 80) and (coordinate_x <= 160)) or ((coordinate_x >= 570) and (coordinate_x <= 650))
-            goto_step_1()
+    # Animate arrows on mouseover
+    $('.grey-text').mouseover arrows_out
 
-# Animate arrows on mouseover
-$('.grey-text').mouseover arrows_out
+    # Animate arrows back
+    $('.grey-text').mouseout arrows_in
 
-# Animate arrows back
-$('.grey-text').mouseout arrows_in
-
-# Send to step 2
-$('.grey-text').click (e)->
-    goto_step_2()
+    # Send to step 2
+    $('.grey-text').click (e)->
+        goto_step_2()
 
 # Step 2 (Obiectiv wide)
 goto_step_2 = ()->
@@ -135,6 +177,16 @@ goto_step_2 = ()->
                                 $('.circle-girl').stop(true, true).animate \
                                     boxShadow: '0px 0px 0px #fff'
                                     , 100
+
+                            # Display lens 3
+                            display_lens(3)
+
+                            # Display the box for lens
+                            $('.circle-girl-container').hover \
+                                ()->
+                                    $('.preview-box').stop(true).fadeIn()
+                                , ()->
+                                    $('.preview-box').stop(true).fadeOut()
 
                             $('.circle-girl-container').click ()->
                                 goto_step_3()
@@ -251,6 +303,16 @@ goto_step_4 = ()->
                 boxShadow: '0px 0px 0px #fff'
                 , 100
 
+        # Display lens 4
+        display_lens(4)
+
+        # Display the box for lens
+        $('.circle-boy-container').hover \
+            ()->
+                $('.preview-box').stop(true).fadeIn()
+            , ()->
+                $('.preview-box').stop(true).fadeOut()
+
         $('.circle-boy-container').click ()->
             goto_step_5()
 
@@ -313,6 +375,6 @@ page_init = ()->
     console.log 'game'
 
     # Setting up steps
-    goto_step_0()
+    goto_step_minus_1()
 
 
