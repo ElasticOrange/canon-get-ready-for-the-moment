@@ -9,8 +9,8 @@
         <title>Orasul printr-un obiectiv</title>
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/pages.css?2014102401">
-        <link rel="stylesheet" href="/css/style.css?2014102401">
+        <link rel="stylesheet" href="/css/pages.css?2014102701">
+        <link rel="stylesheet" href="/css/style.css?2014102701">
         <script src="/js/vendor/modernizr.js"></script>
     </head>
     <body>
