@@ -12,6 +12,7 @@
         <!-- Portrait -->
         <div class="girl-head"></div>
         <div class="circle-girl-container">
+            <img class="cerc-profil" src="/img/cerc-profil.png" />
             <img class="circle-girl" src="/img/circle-girl.png" />
             <span class="circle-girl-text">Vreţi un portret perfect?</span>
         </div>
@@ -20,14 +21,15 @@
         <!-- Tele -->
         <div class="boy-head"></div>
         <div class="circle-boy-container">
+            <img class="cerc-trotineta" src="/img/cerc-trotineta.png" />
             <img class="circle-boy" src="/img/circle-boy.png" />
             <span class="circle-boy-text">Vrei mai aproape?</span>
         </div>
         <!-- /Tele -->
     </div>
 
-    <img class="cerc-profil" src="/img/cerc-profil.png" />
-    <img class="cerc-trotineta" src="/img/cerc-trotineta.png" />
+
+
 
     <div class="preview-box"></div>
 
@@ -62,25 +64,25 @@
     <script type="text/template" id="display_lens_1">
         <div class="preview-lens1 preview-lens1"></div>
         <div class="preview-title">Canon<br /> EF-S 18-135mm f/3.5-5.6 IS STM</div>
-        <div class="preview-content">Bullshit text 1</div>
+        <div class="preview-content">Focalizează imaginea cu obiectivul kit de 18-135mm și începe incursiunea în aplicația Canon.</div>
     </script>
 
     <script type="text/template" id="display_lens_2">
         <div class="preview-lens1 preview-lens2"></div>
         <div class="preview-title">Canon<br /> EF-S 10-18mm f/4.5-5.6 IS STM</div>
-        <div class="preview-content">Pentru a avea o imagine mai </div>
+        <div class="preview-content">Cu obiectivul de 10-18mm poți cuprinde o panoramă mai largă a imaginilor preferate.</div>
     </script>
 
     <script type="text/template" id="display_lens_3">
         <div class="preview-lens1 preview-lens3"></div>
         <div class="preview-title">Canon<br /> EF 50mm f/1.8 II </div>
-        <div class="preview-content">Bullshit text 3</div>
+        <div class="preview-content"> Obiectivul EF 50mm este ideal pentru portrete estompând fundalul și atrangand atenția asupra celui mai important element, subiectul.</div>
     </script>
 
     <script type="text/template" id="display_lens_4">
         <div class="preview-lens1 preview-lens4"></div>
         <div class="preview-title">Canon<br /> EF-S 55-250mm f/4-5.6 IS STM </div>
-        <div class="preview-content">Bullshit text 4</div>
+        <div class="preview-content">Pentru situațiile când apropierea este imposibilă, obiectivul EF-S 55-250mm aduce subiectul în prim-plan.</div>
     </script>
 
     <script type="text/template" id="texts-kit">
