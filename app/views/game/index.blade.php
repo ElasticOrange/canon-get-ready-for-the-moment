@@ -76,7 +76,7 @@
     <script type="text/template" id="display_lens_3">
         <div class="preview-lens1 preview-lens3"></div>
         <div class="preview-title">Canon<br /> EF 50mm f/1.8 II </div>
-        <div class="preview-content"> Obiectivul EF 50mm este ideal pentru portrete estompând fundalul și atrangand atenția asupra celui mai important element, subiectul.</div>
+        <div class="preview-content">Obiectivul EF 50mm este ideal pentru portrete estompând fundalul și atrangand atenția asupra celui mai important element, subiectul.</div>
     </script>
 
     <script type="text/template" id="display_lens_4">
@@ -91,7 +91,7 @@
         </span><br />
         <p class="text-container-description">
             Perfect pentru început, obiectivul Canon EF-S 18-135mm f/3.5-5.6 IS STM este un obiectiv
-            pentru uz general, care vă permite un zoom in şi mai mare, astfel încât obiectele aflate la
+            pentru uz general, care vă permite un zoom in mai mare decât obiectivul de kit, astfel încât obiectele aflate la
             distanță par mai aproape şi vă ajută să surprindeți detalii interesante, peisaje captivante sau
             pur şi simplu să cuprindeţi mai mult în fotografiile voastre. Doriţi focalizare discretă şi
             silenţioasă atunci când filmați un clip video? Nu este nici o problemă, obiectivul beneficiază și
