@@ -62,13 +62,13 @@
     </div>
 
     <script type="text/template" id="display_lens_1">
-        <div class="preview-lens1 preview-lens1"></div>
+        <div class="preview-lens1 preview-lens2"></div>
         <div class="preview-title">Canon<br /> EF-S 18-135mm f/3.5-5.6 IS STM</div>
-        <div class="preview-content">Focalizează imaginea cu obiectivul kit de 18-135mm și începe incursiunea în aplicația Canon.</div>
+        <div class="preview-content">Focalizează cu un click folosind obiectivul de 18-135mm și începe incursiunea în aplicația Canon.</div>
     </script>
 
     <script type="text/template" id="display_lens_2">
-        <div class="preview-lens1 preview-lens2"></div>
+        <div class="preview-lens1 preview-lens1"></div>
         <div class="preview-title">Canon<br /> EF-S 10-18mm f/4.5-5.6 IS STM</div>
         <div class="preview-content">Cu obiectivul de 10-18mm poți cuprinde o panoramă mai largă a imaginilor preferate.</div>
     </script>
