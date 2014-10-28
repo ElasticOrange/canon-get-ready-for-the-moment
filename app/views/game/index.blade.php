@@ -70,7 +70,7 @@
     <script type="text/template" id="display_lens_2">
         <div class="preview-lens1 preview-lens1"></div>
         <div class="preview-title">Canon<br /> EF-S 10-18mm f/4.5-5.6 IS STM</div>
-        <div class="preview-content">Cu obiectivul de 10-18mm poți cuprinde o panoramă mai largă a imaginilor preferate.</div>
+        <div class="preview-content">Cu obiectivul de 10-18mm poți cuprinde un cadru mai larg al imaginilor preferate.</div>
     </script>
 
     <script type="text/template" id="display_lens_3">
