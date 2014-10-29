@@ -354,19 +354,6 @@ goto_step_5 = ()->
                                 $('#obiectiv-tele').fadeIn()
             , zoom_duration / 2
 
-        # Display the back button
-        $('.back-button-container').show(0).fadeIn()
-        # Add fade events on the back button
-        $('.back-button-container').mouseenter ()->
-            $(@).animate \
-                opacity: 0.9
-        $('.back-button-container').mouseleave ()->
-            $(@).animate \
-                opacity: 0.5
-        # Go back to big picture on click
-        $('.back-button-container').click ()->
-            goto_step_6()
-
 goto_step_6 = ()->
     window.location = '/inscriere'
     true
