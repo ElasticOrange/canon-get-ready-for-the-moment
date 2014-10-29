@@ -9,19 +9,19 @@
 
         <div class="radio-container">
             <form>
-                <input type="radio" name="Obiectiv" id="obiectiv-1" class="obiectiv-margin">
+                <input type="radio" value="1" name="Obiectiv" id="obiectiv-1" class="obiectiv-margin">
                 <label for="obiectiv-1">EF-S 18-135mm f/3.5-5.6 IS STM</label>
                 <br />
 
-                <input type="radio" name="Obiectiv" id="obiectiv-2" class="obiectiv-margin">
+                <input type="radio" value="2" name="Obiectiv" id="obiectiv-2" class="obiectiv-margin">
                 <label for="obiectiv-2">EF-S 10-18mm f/4.5-5.6 IS STM</label>
                 <br />
 
-                <input type="radio" name="Obiectiv" id="obiectiv-3" class="obiectiv-margin">
+                <input type="radio" value="3" name="Obiectiv" id="obiectiv-3" class="obiectiv-margin">
                 <label for="obiectiv-3">EF 50mm f/1.8 II</label>
                 <br />
 
-                <input type="radio" name="Obiectiv" id="obiectiv-4" class="obiectiv-margin">
+                <input type="radio" value="4" name="Obiectiv" id="obiectiv-4" class="obiectiv-margin">
                 <label for="obiectiv-4">EF-S 55-250mm f/4-5.6 IS STM</label>
                 <br />
             </form>
