@@ -103,8 +103,8 @@ body {
 .circle-girl {
   display: none;
   position: absolute;
-  top: 140px;
-  left: 147px;
+  top: 190px;
+  left: 260px;
   cursor: pointer;
   cursor: hand;
   border-radius: 50%; }
@@ -113,7 +113,7 @@ body {
   display: none;
   position: absolute;
   top: 270px;
-  left: 310px;
+  left: 305px;
   width: 150px;
   cursor: pointer;
   cursor: hand; }
@@ -159,8 +159,8 @@ body {
 .circle-boy {
   display: none;
   position: absolute;
-  top: 153px;
-  left: 261px;
+  top: 190px;
+  left: 260px;
   cursor: pointer;
   cursor: hand;
   border-radius: 50%; }
@@ -168,7 +168,7 @@ body {
 .circle-boy-text {
   display: none;
   position: absolute;
-  top: 290px;
+  top: 285px;
   left: 310px;
   width: 150px;
   cursor: pointer;
@@ -192,9 +192,10 @@ body {
 .cerc-trotineta {
   display: none;
   position: absolute;
-  top: 393px;
-  left: 537px;
-  border-radius: 50%; }
+  top: 350px;
+  left: 494px;
+  border-radius: 50%;
+  opacity: 0; }
 
 .regulament {
   position: absolute;

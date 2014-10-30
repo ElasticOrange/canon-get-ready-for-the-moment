@@ -151,8 +151,8 @@ body
     display: none;
     position: absolute;
 
-    top: 140px;
-    left: 147px;
+    top: 190px;
+    left: 260px;
 
     @include hand();
 
@@ -165,7 +165,7 @@ body
     display: none;
     position: absolute;
     top: 270px;
-    left: 310px;
+    left: 305px;
     width: 150px;
 
     @include hand();
@@ -226,8 +226,8 @@ body
     display: none;
     position: absolute;
 
-    top: 153px;
-    left: 261px;
+    top: 190px;
+    left: 260px;
 
     @include hand();
 
@@ -239,7 +239,7 @@ body
 
     display: none;
     position: absolute;
-    top: 290px;
+    top: 285px;
     left: 310px;
     width: 150px;
 
@@ -268,9 +268,10 @@ body
 .cerc-trotineta {
     display: none;
     position: absolute;
-    top: 393px;
-    left: 537px;
+    top: 350px;
+    left: 494px;
     border-radius: 50%;
+    opacity: 0;
 }
 
 .regulament {

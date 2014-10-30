@@ -4,7 +4,7 @@
     <img src="/img/pagina_intro.png" />
     <div id="intrebare-container">
         <div class="text-intro text-intro3">
-            Acum că ai parcurs toată aplicaţia noastră, alege obiectivul tău preferat şi intră     automat în competiţia pentru a câştiga unul din obiectivele noastre Canon.
+            Acum e timpul să alegi obiectivul preferat și să intri în competiția pentru a câștiga unul din obiectivele noastre Canon.
         </div>
 
         <div class="radio-container">

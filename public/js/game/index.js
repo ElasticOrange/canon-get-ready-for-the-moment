@@ -232,10 +232,21 @@ goto_step_4 = function() {
     $('.picture-portrait').fadeOut(zoom_duration);
     $('.back-button-container').fadeOut(zoom_duration);
     setTimeout(function() {
-      return $('.cerc-trotineta').fadeIn();
+      return $('.cerc-trotineta').fadeIn(function() {
+        var opacity_infinite;
+        opacity_infinite = function() {
+          return $('.cerc-trotineta').animate({
+            opacity: 1
+          }, 600, function() {
+            return $('.cerc-trotineta').animate({
+              opacity: 0.5
+            }, 600, opacity_infinite);
+          });
+        };
+        return opacity_infinite();
+      });
     }, 1000);
-    $('.boy-head').show();
-    $('.boy-head').mouseover(function() {
+    $('.cerc-trotineta').mouseover(function() {
       if (current_step === 4) {
         setTimeout(function() {
           return $('.cerc-trotineta').css({

@@ -267,13 +267,24 @@ goto_step_4 = ()->
 
         setTimeout \
             ()->
-                $('.cerc-trotineta').fadeIn()
+                $('.cerc-trotineta').fadeIn ()->
+                    opacity_infinite = ()->
+                        $('.cerc-trotineta').animate \
+                            opacity: 1
+                            , 600
+                            , ()->
+                                $('.cerc-trotineta').animate \
+                                    opacity: 0.5
+                                    , 600
+                                    , opacity_infinite
+
+                    opacity_infinite()
             , 1000
 
         # Prepare for tele
         # Display hidden div to active the guy's head
-        $('.boy-head').show()
-        $('.boy-head').mouseover ()->
+        # $('.boy-head').show()
+        $('.cerc-trotineta').mouseover ()->
             if current_step is 4
                 setTimeout \
                     ()->
