@@ -9,12 +9,13 @@ validate_email = function(email) {
 page_init = function() {
   console.log('intrebare');
   return $('#submit-obiectiv').click(function(e) {
+    var selected_value;
     e.preventDefault();
+    selected_value = $('[type=radio]:checked').length ? $('[type=radio]:checked').val() : 1;
     $('#intrebare-container').html(_.template($('#intrebare-final').html()));
     $('#submit-email').click(function(e) {
-      var p, selected_value;
+      var p;
       e.preventDefault();
-      selected_value = $('[type=radio]:checked').length ? $('[type=radio]:checked').val() : 1;
       if (!validate_email($('[type=email]').val())) {
         $('.adress-email').focus().addClass('error');
         return false;

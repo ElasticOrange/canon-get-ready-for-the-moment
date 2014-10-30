@@ -12,8 +12,8 @@
         <!-- Portrait -->
         <div class="girl-head"></div>
         <div class="circle-girl-container">
-            <img class="cerc-profil" src="/img/cerc-profil.png" />
-            <img class="circle-girl" src="/img/circle-girl.png" />
+            <img class="cerc-profil" src="/img/gif_1_fata.gif" />
+            <img class="circle-girl" src="/img/bulina_rosie.png" />
             <span class="circle-girl-text">Vreţi un portret perfect?</span>
         </div>
         <!-- /Portrait -->
@@ -21,8 +21,8 @@
         <!-- Tele -->
         <div class="boy-head"></div>
         <div class="circle-boy-container">
-            <img class="cerc-trotineta" src="/img/cerc-trotineta.png" />
-            <img class="circle-boy" src="/img/circle-boy.png" />
+            <img class="cerc-trotineta" src="/img/trotineta.png" />
+            <img class="circle-boy" src="/img/bulina_rosie.png" />
             <span class="circle-boy-text">Vrei mai aproape?</span>
         </div>
         <!-- /Tele -->

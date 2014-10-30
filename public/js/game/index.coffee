@@ -147,8 +147,8 @@ goto_step_2 = ()->
                             $('#obiectiv-wide').fadeIn()
 
                             # Display hidden div to active the chick's head
-                            $('.girl-head').show()
-                            $('.girl-head').mouseover ()->
+                            # $('.girl-head').show()
+                            $('.cerc-profil').mouseover ()->
                                 if current_step is 2
                                     setTimeout \
                                         ()->
@@ -234,13 +234,6 @@ goto_step_3 = ()->
 
         # Display the back button
         $('.back-button-container').show(0).fadeIn()
-        # Add fade events on the back button
-        $('.back-button-container').mouseenter ()->
-            $(@).animate \
-                opacity: 0.9
-        $('.back-button-container').mouseleave ()->
-            $(@).animate \
-                opacity: 0.5
         # Go back to big picture on click
         $('.back-button-container').click ()->
             goto_step_4()
@@ -267,13 +260,24 @@ goto_step_4 = ()->
 
         setTimeout \
             ()->
-                $('.cerc-trotineta').fadeIn()
+                $('.cerc-trotineta').fadeIn ()->
+                    opacity_infinite = ()->
+                        $('.cerc-trotineta').animate \
+                            opacity: 1
+                            , 600
+                            , ()->
+                                $('.cerc-trotineta').animate \
+                                    opacity: 0.5
+                                    , 600
+                                    , opacity_infinite
+
+                    opacity_infinite()
             , 1000
 
         # Prepare for tele
         # Display hidden div to active the guy's head
-        $('.boy-head').show()
-        $('.boy-head').mouseover ()->
+        # $('.boy-head').show()
+        $('.cerc-trotineta').mouseover ()->
             if current_step is 4
                 setTimeout \
                     ()->

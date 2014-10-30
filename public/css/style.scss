@@ -151,8 +151,8 @@ body
     display: none;
     position: absolute;
 
-    top: 140px;
-    left: 147px;
+    top: 190px;
+    left: 260px;
 
     @include hand();
 
@@ -165,7 +165,7 @@ body
     display: none;
     position: absolute;
     top: 270px;
-    left: 310px;
+    left: 305px;
     width: 150px;
 
     @include hand();
@@ -197,7 +197,6 @@ body
     z-index: 5;
 
     display: none;
-    opacity: 0.5;
 
     position: absolute;
     top: 420px;
@@ -226,8 +225,8 @@ body
     display: none;
     position: absolute;
 
-    top: 153px;
-    left: 261px;
+    top: 190px;
+    left: 260px;
 
     @include hand();
 
@@ -239,7 +238,7 @@ body
 
     display: none;
     position: absolute;
-    top: 290px;
+    top: 285px;
     left: 310px;
     width: 150px;
 
@@ -261,17 +260,17 @@ body
 .cerc-profil {
     display: none;
     position: absolute;
-    top: 322px;
-    left: 152px;
-    border-radius: 50%;
+    top: 294px;
+    left: 0px;
 }
 
 .cerc-trotineta {
     display: none;
     position: absolute;
-    top: 393px;
-    left: 537px;
+    top: 350px;
+    left: 494px;
     border-radius: 50%;
+    opacity: 0;
 }
 
 .regulament {

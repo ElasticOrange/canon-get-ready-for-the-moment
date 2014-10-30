@@ -118,8 +118,7 @@ goto_step_2 = function() {
         $('#obiectiv-kit').fadeOut(400, function() {
           current_step = 2;
           $('#obiectiv-wide').fadeIn();
-          $('.girl-head').show();
-          $('.girl-head').mouseover(function() {
+          $('.cerc-profil').mouseover(function() {
             if (current_step === 2) {
               setTimeout(function() {
                 return $('.cerc-profil').css({
@@ -199,16 +198,6 @@ goto_step_3 = function() {
       });
     }, zoom_duration / 2);
     $('.back-button-container').show(0).fadeIn();
-    $('.back-button-container').mouseenter(function() {
-      return $(this).animate({
-        opacity: 0.9
-      });
-    });
-    $('.back-button-container').mouseleave(function() {
-      return $(this).animate({
-        opacity: 0.5
-      });
-    });
     return $('.back-button-container').click(function() {
       return goto_step_4();
     });
@@ -233,10 +222,21 @@ goto_step_4 = function() {
     $('.picture-portrait').fadeOut(zoom_duration);
     $('.back-button-container').fadeOut(zoom_duration);
     setTimeout(function() {
-      return $('.cerc-trotineta').fadeIn();
+      return $('.cerc-trotineta').fadeIn(function() {
+        var opacity_infinite;
+        opacity_infinite = function() {
+          return $('.cerc-trotineta').animate({
+            opacity: 1
+          }, 600, function() {
+            return $('.cerc-trotineta').animate({
+              opacity: 0.5
+            }, 600, opacity_infinite);
+          });
+        };
+        return opacity_infinite();
+      });
     }, 1000);
-    $('.boy-head').show();
-    $('.boy-head').mouseover(function() {
+    $('.cerc-trotineta').mouseover(function() {
       if (current_step === 4) {
         setTimeout(function() {
           return $('.cerc-trotineta').css({

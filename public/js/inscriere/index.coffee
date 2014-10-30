@@ -8,13 +8,13 @@ page_init = ()->
     $('#submit-obiectiv').click (e)->
         e.preventDefault()
 
+        selected_value = if $('[type=radio]:checked').length then $('[type=radio]:checked').val() else 1
+
         $('#intrebare-container').html(_.template($('#intrebare-final').html()))
 
         # Set the event on submit after the template was loaded
         $('#submit-email').click (e)->
             e.preventDefault()
-
-            selected_value = if $('[type=radio]:checked').length then $('[type=radio]:checked').val() else 1
 
             if not validate_email($('[type=email]').val())
                 $('.adress-email').focus().addClass('error')

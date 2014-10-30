@@ -95,8 +95,8 @@ body {
     text-align:center;
     color:white;
     margin:auto;
-    width:280px;
-    margin-top:-368px;
+    width: 260px;
+    margin-top: -384px;
 }
 
 .text-intro2{
@@ -105,8 +105,8 @@ body {
 }
 
 .text-intro3{
-    width:250px;
-    margin-top:-378px;
+    width: 250px;
+    margin-top: -358px;
     font-size: 18px;
     line-height: 1;
 }
