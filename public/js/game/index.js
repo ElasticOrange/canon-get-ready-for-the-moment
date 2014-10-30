@@ -198,16 +198,6 @@ goto_step_3 = function() {
       });
     }, zoom_duration / 2);
     $('.back-button-container').show(0).fadeIn();
-    $('.back-button-container').mouseenter(function() {
-      return $(this).animate({
-        opacity: 0.9
-      });
-    });
-    $('.back-button-container').mouseleave(function() {
-      return $(this).animate({
-        opacity: 0.5
-      });
-    });
     return $('.back-button-container').click(function() {
       return goto_step_4();
     });
@@ -322,16 +312,6 @@ goto_step_5 = function() {
       });
     }, zoom_duration / 2);
     $('.back-button-container').show(0).fadeIn();
-    $('.back-button-container').mouseenter(function() {
-      return $(this).animate({
-        opacity: 0.9
-      });
-    });
-    $('.back-button-container').mouseleave(function() {
-      return $(this).animate({
-        opacity: 0.5
-      });
-    });
     return $('.back-button-container').click(function() {
       return goto_step_6();
     });
