@@ -5,11 +5,11 @@ body {
   border-radius: 3px;
   border: 0px;
   background-color: #ffffff;
-  background: -webkit-linear-gradient(90deg, #e7e7e7 0%, white 100%);
-  background: -moz-linear-gradient(90deg, #e7e7e7 0%, white 100%);
-  background: -o-linear-gradient(90deg, #e7e7e7 0%, white 100%);
-  background: -ms-linear-gradient(90deg, #e7e7e7 0%, white 100%);
-  background: linear-gradient(0deg, #e7e7e7 0%, white 100%);
+  background: -webkit-linear-gradient(90deg, #e7e7e7 0%, #ffffff 100%);
+  background: -moz-linear-gradient(90deg, #e7e7e7 0%, #ffffff 100%);
+  background: -o-linear-gradient(90deg, #e7e7e7 0%, #ffffff 100%);
+  background: -ms-linear-gradient(90deg, #e7e7e7 0%, #ffffff 100%);
+  background: linear-gradient(0deg, #e7e7e7 0%, #ffffff 100%);
   width: 180px;
   height: 29px;
   margin-left: auto;
@@ -24,7 +24,7 @@ body {
 
 .picture-container {
   display: none;
-  background-image: url("../img/img-full.png");
+  background-image: url('../img/img-full.png');
   background-position: center bottom;
   height: 379px;
   width: 570px;
@@ -127,7 +127,7 @@ body {
   text-align: center; }
 
 .picture-portrait {
-  background-image: url("../img/img-portrait.png");
+  background-image: url('../img/img-portrait.png');
   background-position: center bottom;
   position: absolute;
   top: 0px;
@@ -175,7 +175,7 @@ body {
   cursor: hand; }
 
 .picture-tele {
-  background-image: url("../img/img-tele.png");
+  background-image: url('../img/img-tele.png');
   background-position: center bottom;
   position: absolute;
   top: 0px;
@@ -186,9 +186,8 @@ body {
 .cerc-profil {
   display: none;
   position: absolute;
-  top: 322px;
-  left: 152px;
-  border-radius: 50%; }
+  top: 294px;
+  left: 0px; }
 
 .cerc-trotineta {
   display: none;
@@ -216,3 +215,5 @@ body {
   left: 0px;
   display: none;
   z-index: 10; }
+
+/*# sourceMappingURL=style.css.map */

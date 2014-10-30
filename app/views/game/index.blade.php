@@ -12,7 +12,7 @@
         <!-- Portrait -->
         <div class="girl-head"></div>
         <div class="circle-girl-container">
-            <img class="cerc-profil" src="/img/cerc-profil.png" />
+            <img class="cerc-profil" src="/img/gif_1_fata.gif" />
             <img class="circle-girl" src="/img/circle-girl.png" />
             <span class="circle-girl-text">Vreţi un portret perfect?</span>
         </div>

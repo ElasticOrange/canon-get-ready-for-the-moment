@@ -118,8 +118,7 @@ goto_step_2 = function() {
         $('#obiectiv-kit').fadeOut(400, function() {
           current_step = 2;
           $('#obiectiv-wide').fadeIn();
-          $('.girl-head').show();
-          $('.girl-head').mouseover(function() {
+          $('.cerc-profil').mouseover(function() {
             if (current_step === 2) {
               setTimeout(function() {
                 return $('.cerc-profil').css({

@@ -147,8 +147,8 @@ goto_step_2 = ()->
                             $('#obiectiv-wide').fadeIn()
 
                             # Display hidden div to active the chick's head
-                            $('.girl-head').show()
-                            $('.girl-head').mouseover ()->
+                            # $('.girl-head').show()
+                            $('.cerc-profil').mouseover ()->
                                 if current_step is 2
                                     setTimeout \
                                         ()->
