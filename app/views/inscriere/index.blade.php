@@ -3,6 +3,7 @@
 @section('content')
     <img src="/img/pagina_intro.png" />
     <div id="intrebare-container">
+        <div class="ugly-circle"></div>
         <div class="text-intro text-intro3">
             Acum e timpul să alegi obiectivul preferat și să intri în competiția pentru a câștiga unul din obiectivele noastre Canon.
         </div>
@@ -38,6 +39,7 @@
     <!--Obiective-->
 
     <script type="text/template" id="intrebare-final">
+        <div class="ugly-circle"></div>
         <div class="text-intro text-intro2">Felicitări! Ai intrat automat în cursa pentru a câştiga un obiectiv Canon!</div>
         <div class="text-intro-second text-intro-second2">Te rugăm să ne laşi datele tale de contact pentru autentificare.</div>
         <input type="email" class="adress-email" placeholder="e-mail" />

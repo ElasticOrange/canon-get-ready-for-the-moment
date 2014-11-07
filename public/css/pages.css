@@ -97,6 +97,7 @@ body {
     margin:auto;
     width: 260px;
     margin-top: -384px;
+    position: relative;
 }
 
 .text-intro2{
@@ -122,6 +123,7 @@ body {
     width: 260px;
     margin-top: 10px;
     line-height: 1.4;
+    position: relative;
 }
 
 .text-intro-second2{
@@ -158,11 +160,12 @@ body {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  width: 240px;
+  width: 245px;
   color: #fff;
   margin-top: 15px;
   font-size: 14px;
   line-height: 1.4;
+  position: relative;
 }
 
 .obiectiv-margin{

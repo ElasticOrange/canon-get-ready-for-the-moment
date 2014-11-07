@@ -1,6 +1,8 @@
+/* line 1, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 body {
   display: none; }
 
+/* line 6, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .button-descopera {
   border-radius: 3px;
   border: 0px;
@@ -18,10 +20,12 @@ body {
   position: relative;
   margin-top: 8px; }
 
+/* line 39, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .hand {
   cursor: pointer;
   cursor: hand; }
 
+/* line 44, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .picture-container {
   display: none;
   background-image: url('../img/img-full.png');
@@ -33,6 +37,7 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+/* line 60, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .grey-container {
   z-index: 2;
   position: absolute;
@@ -41,6 +46,7 @@ body {
   width: 760px;
   display: none; }
 
+/* line 71, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .grey-overlay {
   position: relative;
   top: 128px;
@@ -50,6 +56,7 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+/* line 82, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .grey-text {
   position: relative;
   display: block;
@@ -66,32 +73,40 @@ body {
   cursor: pointer;
   cursor: hand; }
 
+/* line 101, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .arrow-left {
   position: absolute;
   left: 160px;
   top: 223px; }
 
+/* line 107, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .arrow-right {
   position: absolute;
   left: 500px;
   top: 223px; }
 
+/* line 115, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .obiectiv-wide {
   display: none; }
 
+/* line 119, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .obiectiv-portret {
   display: none; }
 
+/* line 123, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .obiectiv-tele {
   display: none; }
 
+/* line 129, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .text-container-title {
   font-size: 16px;
   font-weight: 700; }
 
+/* line 134, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .text-container-description {
   font-size: 12px; }
 
+/* line 138, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .girl-head {
   width: 95px;
   height: 115px;
@@ -100,6 +115,7 @@ body {
   position: absolute;
   left: 120px; }
 
+/* line 150, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .circle-girl {
   display: none;
   position: absolute;
@@ -109,6 +125,7 @@ body {
   cursor: hand;
   border-radius: 50%; }
 
+/* line 162, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .circle-girl-text {
   display: none;
   position: absolute;
@@ -118,6 +135,7 @@ body {
   cursor: pointer;
   cursor: hand; }
 
+/* line 174, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .indemn, .circle-girl-text, .circle-boy-text {
   text-transform: uppercase;
   font-size: 28px;
@@ -126,6 +144,7 @@ body {
   z-index: 3;
   text-align: center; }
 
+/* line 183, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .picture-portrait {
   background-image: url('../img/img-portrait.png');
   background-position: center bottom;
@@ -135,6 +154,7 @@ body {
   height: 507px;
   display: none; }
 
+/* line 195, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .back-button-container {
   z-index: 5;
   display: none;
@@ -147,6 +167,7 @@ body {
   cursor: pointer;
   cursor: hand; }
 
+/* line 212, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .boy-head {
   width: 45px;
   height: 45px;
@@ -155,6 +176,7 @@ body {
   position: absolute;
   left: 530px; }
 
+/* line 224, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .circle-boy {
   display: none;
   position: absolute;
@@ -164,6 +186,7 @@ body {
   cursor: hand;
   border-radius: 50%; }
 
+/* line 236, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .circle-boy-text {
   display: none;
   position: absolute;
@@ -173,6 +196,7 @@ body {
   cursor: pointer;
   cursor: hand; }
 
+/* line 248, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .picture-tele {
   background-image: url('../img/img-tele.png');
   background-position: center bottom;
@@ -182,12 +206,14 @@ body {
   height: 507px;
   display: none; }
 
+/* line 260, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .cerc-profil {
   display: none;
   position: absolute;
   top: 294px;
   left: 0px; }
 
+/* line 267, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .cerc-trotineta {
   display: none;
   position: absolute;
@@ -196,6 +222,7 @@ body {
   border-radius: 50%;
   opacity: 0; }
 
+/* line 276, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .regulament {
   position: absolute;
   top: 680px;
@@ -203,9 +230,11 @@ body {
   font-size: 10px;
   color: black; }
 
+/* line 283, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .preview-box {
   display: none; }
 
+/* line 287, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .whiteness {
   width: 760px;
   height: 507px;
@@ -215,5 +244,16 @@ body {
   left: 0px;
   display: none;
   z-index: 10; }
+
+/* line 298, /usr/share/nginx/facebook-obiective/public/css/style.scss */
+.ugly-circle {
+  position: absolute;
+  background-color: #E21E26;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  top: 80px;
+  left: 205px;
+  z-index: 0; }
 
 /*# sourceMappingURL=style.css.map */

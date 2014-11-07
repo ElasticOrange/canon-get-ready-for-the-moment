@@ -294,3 +294,14 @@ body
     display: none;
     z-index: 10;
 }
+
+.ugly-circle {
+    position: absolute;
+    background-color: #E21E26;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    top: 80px;
+    left: 205px;
+    z-index: 0;
+}
