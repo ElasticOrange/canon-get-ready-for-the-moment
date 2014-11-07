@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container-picture">
+        <div class="ugly-circle"></div>
         <img src="img/pagina_intro.png"/>
         <div class="text-intro text-intro-final">Multumim pentru participare!</div>
         <div class="text-intro-second"></div>
