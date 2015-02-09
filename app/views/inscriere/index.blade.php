@@ -40,11 +40,13 @@
 
     <script type="text/template" id="intrebare-final">
         <div class="ugly-circle"></div>
-        <div class="text-intro text-intro2">Felicitări! Ai intrat automat în cursa pentru a câştiga un obiectiv Canon!</div>
+        <div class="text-intro text-intro23">Multumim pentru interesul acordat. Campania Orasul printr-un obiectiv s-a incheiat.</div>
+    </script>
+    <!--<script>
         <div class="text-intro-second text-intro-second2">Te rugăm să ne laşi datele tale de contact pentru autentificare.</div>
         <input type="email" class="adress-email" placeholder="e-mail" />
         <input id="submit-email" type="submit" class="submit-button" value="Submit" />
-    </script>
+    </script> -->
 @stop
 
 @section('js')
