@@ -146,7 +146,7 @@ body {
 
 /* line 183, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .picture-portrait {
-  background-image: url('../img/img-portrait.png');
+  background-image: url('../img/img-portrait.jpg');
   background-position: center bottom;
   position: absolute;
   top: 0px;
