@@ -374,7 +374,7 @@ body {
   margin-top: 100px;
   width: 140px;
   height: 93px;
-  margin-left: -15px;
+  margin-left: -25px;
   background-repeat: no-repeat;
 }
 
@@ -407,4 +407,13 @@ body {
   margin-top: -22px;
   margin-left: 20px;
   z-index: 2;
+}
+
+.preview-content-60mm {
+  position: absolute;
+  top: 52px;
+  left: 90px;
+  color: white;
+  /* width: 130px; */
+  font-size: 12px;
 }

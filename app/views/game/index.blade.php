@@ -76,7 +76,7 @@
     <script type="text/template" id="display_lens_3">
         <div class="preview-lens3"></div>
         <div class="preview-title">Canon<br /> EF-S 60mm f/2.8 Macro USM </div>
-        <div class="preview-content">Obiectivul foto Canon EF-S 60mm f/2.8 Macro USM este un obiectiv pentru macro fotografie excelent, dinamic, compact, cu focalizare rapida care ofera detalii impresionante, indiferent de detaliul pe care doriti sa il surprindeti.</div>
+        <div class="preview-content-60mm">Obiectivul foto Canon EF-S 60mm f/2.8 Macro USM este un obiectiv pentru macro fotografie excelent, dinamic, compact, cu focalizare rapida care ofera detalii impresionante, indiferent de detaliul pe care doriti sa il surprindeti.</div>
     </script>
 
     <script type="text/template" id="display_lens_4">
