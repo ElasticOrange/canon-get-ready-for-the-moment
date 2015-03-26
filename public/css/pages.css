@@ -370,10 +370,12 @@ body {
 }
 
 .preview-lens3{
-  background-image:url(../img/Obiective/obiectiv3-preview.png);
-  margin-top:50px;
-  height:140px;
-  margin-left:10px;
+  background-image:url(../img/obiectiv_60mm.png);
+  margin-top: 100px;
+  width: 140px;
+  height: 93px;
+  margin-left: -15px;
+  background-repeat: no-repeat;
 }
 
 .preview-lens4{

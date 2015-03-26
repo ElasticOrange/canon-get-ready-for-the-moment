@@ -14,7 +14,7 @@
         <div class="circle-girl-container">
             <img class="cerc-profil" src="/img/gif_1_fata.gif" />
             <img class="circle-girl" src="/img/bulina_rosie.png" />
-            <span class="circle-girl-text">Vreţi un portret perfect?</span>
+            <span class="circle-girl-text">Vreţi un detaliu perfect?</span>
         </div>
         <!-- /Portrait -->
 
@@ -74,9 +74,9 @@
     </script>
 
     <script type="text/template" id="display_lens_3">
-        <div class="preview-lens1 preview-lens3"></div>
-        <div class="preview-title">Canon<br /> EF 50mm f/1.8 II </div>
-        <div class="preview-content">Obiectivul EF 50mm este ideal pentru portrete estompând fundalul și atrangand atenția asupra celui mai important element, subiectul.</div>
+        <div class="preview-lens3"></div>
+        <div class="preview-title">Canon<br /> EF-S 60mm f/2.8 Macro USM </div>
+        <div class="preview-content">Obiectivul foto Canon EF-S 60mm f/2.8 Macro USM este un obiectiv pentru macro fotografie excelent, dinamic, compact, cu focalizare rapida care ofera detalii impresionante, indiferent de detaliul pe care doriti sa il surprindeti.</div>
     </script>
 
     <script type="text/template" id="display_lens_4">
