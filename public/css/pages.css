@@ -399,3 +399,10 @@ body {
   width:130px;
   font-size:12px;
 }
+
+.obiective5{
+  position: relative;
+  margin-top: -22px;
+  margin-left: 20px;
+  z-index: 2;
+}

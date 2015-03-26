@@ -14,10 +14,9 @@ automat în competiţie pentru a câştiga un obiectiv CANON</div>
     <input type="submit" class="submit-button" value="Submit"/>
 
     <!--Obiective-->
-    <div class="obiectiv_unu obiective obiective-submit"><img src="img/Obiective/obiectiv2.png"/></div>
-    <div class="obiectiv_doi obiective obiective-submit"><img src="img/Obiective/obiectiv1.png"/></div>
-    <div class="obiectiv_trei obiective obiective-submit"><img src="img/Obiective/obiectiv4.png"/></div>
-    <div class="obiectiv_patru obiective obiective-submit"><img src="img/Obiective/obiectiv3.png"/></div>
+    <div class="obiective5">
+        <img src="/img/obiective5.png" />
+    </div>
     <!--/Obiective-->
 @stop
 
