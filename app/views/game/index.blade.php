@@ -30,11 +30,14 @@
     </div>
         
         <!-- Nou -->
-    <div class="circle-girlback-container">
-        <div class="ugly-circle2"></div>
-        <span class="circle-girlback-text">Vrei un peisaj perfect?</span>
-    </div>
+        <div class="circle-girlback-container">
+            <div class="ugly-circle2"></div>
+            <span class="circle-girlback-text">Vrei un peisaj perfect?</span>
+        </div>
         <!-- /Nou -->
+        
+    <div class="picture-container2">
+    </div>
 
 
 
@@ -97,7 +100,7 @@
     <script type="text/template" id="display_lens_5">
         <div class="preview-lens5"></div>
         <div class="preview-title">Canon<br /> EF-S 24mm f/2.8 STM </div>
-        <div class="preview-content">Obiectivul Canon EF-S 24mm f/2.8 STM asigură imagini de o calitate excepţională şi o focalizare foarte rapidă.</div>
+        <div class="preview-content-24mm">Obiectivul Canon EF-S 24mm f/2.8 STM asigură imagini de o calitate excepţională şi o focalizare foarte rapidă.</div>
     </script>
 
     <script type="text/template" id="texts-kit">

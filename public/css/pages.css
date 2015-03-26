@@ -389,11 +389,11 @@ body {
 }
 
 .preview-lens5{
-  background-image:url(../img/obiectiv_24mm.png);
-  margin-top: 100px;
-  width: 140px;
+  background-image:url(../img/obiectiv24mm3.png);
+  margin-top: 130px;
+  width: 100px;
   height: 93px;
-  margin-left: -25px;
+  margin-left: -5px;
   background-repeat: no-repeat;
 }
 
@@ -424,6 +424,15 @@ body {
 .preview-content-60mm {
   position: absolute;
   top: 52px;
+  left: 90px;
+  color: white;
+  /* width: 130px; */
+  font-size: 12px;
+}
+
+.preview-content-24mm {
+  position: absolute;
+  top: 72px;
   left: 90px;
   color: white;
   /* width: 130px; */

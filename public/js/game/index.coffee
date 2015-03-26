@@ -375,14 +375,36 @@ goto_step_5 = ()->
             $('.ugly-circle2').stop(true, true).animate \
                 boxShadow: '0px 0px 0px #fff'
                 , 100
+        display_lens(5)
 
-        # Display the back button
-        $('.back-button-container').show(0).fadeIn()
-        # Go back to big picture on click
-        $('.back-button-container').click ()->
+        # Display the box for lens
+        $('.circle-girlback-container').hover \
+            ()->
+                $('.preview-box').stop(true).fadeIn()
+            , ()->
+                $('.preview-box').stop(true).fadeOut()
+
+        $('.circle-girlback-container').click ()->
             goto_step_6()
 
 goto_step_6 = ()->
+    if current_step is 5
+        current_step = 6
+        $('.circle-girlback-container').fadeOut()
+        if (Modernizr.bgpositionxy)
+            $('.circle-girlback-container').animate \
+                'background-size': '100%'
+                , 'background-position-x': '0px'
+                , 'background-position-y': '0px'
+                , zoom_duration
+                , 'easeOutQuad'
+        else
+            console.log 'FU Firefox again'
+
+        $('.picture-tele').css({display: 'block'}).fadeIn(zoom_duration)
+        $('.picture-container2').fadeOut(zoom_duration)
+
+goto_step_7 = ()->
     window.location = '/inscriere'
     true
 
