@@ -357,6 +357,24 @@ goto_step_5 = ()->
                             , ()->
                                 $('#obiectiv-tele').fadeIn()
             , zoom_duration / 2
+        
+        # $('.circle-girlback-container').fadeIn()
+        # Display the hidden circle div if the user waits for 10 seconds
+        setTimeout \
+            ()->
+                if current_step is 5
+                    $('.circle-girlback-container').stop(true).fadeIn()
+                    $('.ugly-circle2').stop(true).fadeIn()
+                    $('.circle-girlback-text').stop(true).fadeIn()
+            , 5000
+        $('.circle-girlback-container').mouseenter ()->
+            $('.ugly-circle2').stop(true, true).animate \
+                boxShadow: '0px 0px 15px #fff'
+                , 100
+        $('.circle-girlback-container').mouseleave ()->
+            $('.ugly-circle2').stop(true, true).animate \
+                boxShadow: '0px 0px 0px #fff'
+                , 100
 
         # Display the back button
         $('.back-button-container').show(0).fadeIn()

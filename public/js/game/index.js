@@ -312,6 +312,23 @@ goto_step_5 = function() {
         });
       });
     }, zoom_duration / 2);
+    setTimeout(function() {
+      if (current_step === 5) {
+        $('.circle-girlback-container').stop(true).fadeIn();
+        $('.ugly-circle2').stop(true).fadeIn();
+        return $('.circle-girlback-text').stop(true).fadeIn();
+      }
+    }, 5000);
+    $('.circle-girlback-container').mouseenter(function() {
+      return $('.ugly-circle2').stop(true, true).animate({
+        boxShadow: '0px 0px 15px #fff'
+      }, 100);
+    });
+    $('.circle-girlback-container').mouseleave(function() {
+      return $('.ugly-circle2').stop(true, true).animate({
+        boxShadow: '0px 0px 0px #fff'
+      }, 100);
+    });
     $('.back-button-container').show(0).fadeIn();
     return $('.back-button-container').click(function() {
       return goto_step_6();

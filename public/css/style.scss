@@ -328,13 +328,14 @@ body
     @include hand();
 
     border-radius: 50%;
+
 }
 
 .picture-container2
 {
     display: none;
 
-    background-image: url('../img/img-full.png');
+    background-image: url('../img/imagine_24mm.jpg');
     background-position: center bottom;
 
     height: 379px;
@@ -344,4 +345,21 @@ body
     top: 128px;
 
     @include margin-auto();
+}
+
+.circle-girlback-container
+{
+    z-index: 5;
+
+    display: none;
+
+    position: absolute;
+    top: 420px;
+    left: 680px;
+    text-align: center;
+
+    color: white;
+    font-weight: 700;
+
+    @include hand();
 }

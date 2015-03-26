@@ -29,14 +29,12 @@
 
     </div>
         
-    <div class="picture-container2">
         <!-- Nou -->
-        <div class="circle-girlback-container">
-            <img class="circle-girlback" src="/img/bulina_rosie.png" />
-            <span class="circle-girlback-text">Vrei un peisaj perfect?</span>
-        </div>
-        <!-- /Nou -->
+    <div class="circle-girlback-container">
+        <div class="ugly-circle2"></div>
+        <span class="circle-girlback-text">Vrei un peisaj perfect?</span>
     </div>
+        <!-- /Nou -->
 
 
 

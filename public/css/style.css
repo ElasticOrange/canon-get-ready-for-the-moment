@@ -151,11 +151,11 @@ body {
 .circle-girlback-text {
   display: none;
   position: absolute;
-  top: 285px;
-  left: 310px;
   width: 150px;
   cursor: pointer;
-  cursor: hand; }
+  cursor: hand;
+  top: 265px;
+  left: 305px; }
 
 /* line 321, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .circle-girlback {
@@ -165,7 +165,8 @@ body {
   left: 260px;
   cursor: pointer;
   cursor: hand;
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
 /* line 174, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .indemn, .circle-girl-text, .circle-boy-text, .circle-girlback-text {
@@ -198,6 +199,17 @@ body {
   font-weight: 700;
   cursor: pointer;
   cursor: hand; }
+
+.circle-girlback-container {
+  z-index: 5;
+  display: none;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  cursor: hand;
+}
 
 /* line 212, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .boy-head {
@@ -289,3 +301,16 @@ body {
   z-index: 0; }
 
 /*# sourceMappingURL=style.css.map */
+
+.ugly-circle2 {
+  display: none;
+  position: absolute;
+  background-color: #E21E26;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  top: 180px;
+  left: 260px;
+  z-index: 0;
+  opacity: 0.6;
+}
