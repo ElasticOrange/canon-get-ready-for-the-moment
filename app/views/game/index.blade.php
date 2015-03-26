@@ -58,6 +58,7 @@
     <img class="obiectiv-kit" id="obiectiv-wide" src="/img/Obiective/obiectiv1.png">
     <img class="obiectiv-kit-60mm" id="obiectiv-portrait" src="/img/obiectiv_60mm.png">
     <img class="obiectiv-kit" id="obiectiv-tele" src="/img/Obiective/obiectiv3.png">
+    <img class="obiectiv-kit-24mm" id="obiectiv-nou" src="/img/obiectiv_24mm.png">
     <div class="text-container">
     </div>
 

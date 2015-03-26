@@ -434,3 +434,11 @@ body {
   left: 25px;
   top: 565px;
 }
+
+.obiectiv-kit-24mm{
+  display: none;
+  position: absolute;
+  z-index: 4;
+  left: 25px;
+  top: 565px;
+}
