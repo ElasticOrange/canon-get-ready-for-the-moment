@@ -305,3 +305,43 @@ body
     left: 205px;
     z-index: 0;
 }
+
+.circle-girlback-text {
+    @extend .indemn;
+
+    display: none;
+    position: absolute;
+    top: 270px;
+    left: 305px;
+    width: 150px;
+
+    @include hand();
+}
+
+.circle-girlback {
+    display: none;
+    position: absolute;
+
+    top: 190px;
+    left: 260px;
+
+    @include hand();
+
+    border-radius: 50%;
+}
+
+.picture-container2
+{
+    display: none;
+
+    background-image: url('../img/img-full.png');
+    background-position: center bottom;
+
+    height: 379px;
+    width: 570px;
+
+    position: relative;
+    top: 128px;
+
+    @include margin-auto();
+}

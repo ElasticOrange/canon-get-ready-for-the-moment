@@ -26,6 +26,16 @@
             <span class="circle-boy-text">Vrei mai aproape?</span>
         </div>
         <!-- /Tele -->
+
+    </div>
+        
+    <div class="picture-container2">
+        <!-- Nou -->
+        <div class="circle-girlback-container">
+            <img class="circle-girlback" src="/img/bulina_rosie.png" />
+            <span class="circle-girlback-text">Vrei un peisaj perfect?</span>
+        </div>
+        <!-- /Nou -->
     </div>
 
 

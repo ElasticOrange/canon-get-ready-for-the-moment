@@ -37,6 +37,18 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+/* line 333, /usr/share/nginx/facebook-obiective/public/css/style.scss */
+.picture-container2 {
+  display: none;
+  background-image: url('../img/imagine_24mm.jpg');
+  background-position: center bottom;
+  height: 379px;
+  width: 570px;
+  position: relative;
+  top: 128px;
+  margin-left: auto;
+  margin-right: auto; }
+
 /* line 60, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .grey-container {
   z-index: 2;
@@ -135,8 +147,28 @@ body {
   cursor: pointer;
   cursor: hand; }
 
+/* line 309, /usr/share/nginx/facebook-obiective/public/css/style.scss */
+.circle-girlback-text {
+  display: none;
+  position: absolute;
+  top: 285px;
+  left: 310px;
+  width: 150px;
+  cursor: pointer;
+  cursor: hand; }
+
+/* line 321, /usr/share/nginx/facebook-obiective/public/css/style.scss */
+.circle-girlback {
+  display: none;
+  position: absolute;
+  top: 190px;
+  left: 260px;
+  cursor: pointer;
+  cursor: hand;
+  border-radius: 50%; }
+
 /* line 174, /usr/share/nginx/facebook-obiective/public/css/style.scss */
-.indemn, .circle-girl-text, .circle-boy-text {
+.indemn, .circle-girl-text, .circle-boy-text, .circle-girlback-text {
   text-transform: uppercase;
   font-size: 28px;
   color: white;
