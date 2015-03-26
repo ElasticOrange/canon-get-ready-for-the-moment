@@ -385,6 +385,15 @@ body {
   margin-left:10px;
 }
 
+.preview-lens5{
+  background-image:url(../img/obiectiv_24mm.png);
+  margin-top: 100px;
+  width: 140px;
+  height: 93px;
+  margin-left: -25px;
+  background-repeat: no-repeat;
+}
+
 .preview-title{
   top:0px;
   left:20px;

@@ -85,6 +85,12 @@
         <div class="preview-content">Pentru situațiile când apropierea este imposibilă, obiectivul EF-S 55-250mm aduce subiectul în prim-plan.</div>
     </script>
 
+    <script type="text/template" id="display_lens_5">
+        <div class="preview-lens5"></div>
+        <div class="preview-title">Canon<br /> EF-S 24mm f/2.8 STM </div>
+        <div class="preview-content">Obiectivul Canon EF-S 24mm f/2.8 STM asigură imagini de o calitate excepţională şi o focalizare foarte rapidă.</div>
+    </script>
+
     <script type="text/template" id="texts-kit">
         <span class="text-container-title">
             Canon EF-S 18-135mm f/3.5-5.6 IS STM
@@ -120,16 +126,15 @@
 
     <script type="text/template" id="texts-portrait">
         <span class="text-container-title">
-            Canon EF 50mm f/1.8 II
+            Canon EF-S 60mm f/2.8 Macro USM
         </span><br />
         <p class="text-container-description">
-            Cu ajutorul obiectivului EF 50mm f/1.8 II puteţi crea emoția vizuală necesară oricărui portret
-            şi este ideal pentru estomparea fundalurilor, deoarece are o diafragmă mare de 3,5 ori mai
-            mare decât cea a obiectivului zoom standard EF-S 18-55mm f/3.5-5.6 IS STM. Estomparea
-            fundalului într-o fotografie atrage atenţia asupra celui mai important element din cadru –
-            persoana fotografiată. Încercaţi să setaţi aparatul în modul Av, pentru a putea seta diafragma
-            dorită (nu uitaţi că diafragma mare este dată de valoarea mică) apoi focalizaţi pe partea pe care
-            o doriţi să fie clară, apăsând la jumătate butonul declanşator înainte de a fotografia.
+            Doriţi să surprindeţi cele mai mici detalii? Obiectivul foto Canon EF-S 60mm f/2.8 Macro USM este
+             un obiectiv pentru macro fotografie excelent, dinamic, compact, cu focalizare rapidă care oferă 
+             detalii impresionante, indiferent de detaliul pe care doriţi să îl surprindeţi. Capacitatea acestuia 
+             de a focaliza imaginile de mărime naturală pe senzorul de imagine oferă performanţe macro impresionante. 
+             De asemenea, fotografiile de portret se vor bucura de o deschidere mare a diafragmei care îngustează 
+             adâncimea câmpului şi creează o neclaritate de fundal minunată, făcând că subiectul dumneavoastră să iasă în evidenţă.
         </p>
     </script>
 
@@ -143,6 +148,18 @@
             obiectiv zoom telefoto face ca obiectele de la distanță să pară mult mai aproape, astfel încât
             să vă puteți apropia de acțiune. Ideal pentru fotografierea scenelor
             atunci când nu puteți fizic să vă apropiați de subiect.
+        </p>
+    </script>
+
+    <script type="text/template" id="texts-nou">
+        <span class="text-container-title">
+            Canon EF-S 24mm f/2.8 STM
+        </span><br />
+        <p class="text-container-description">
+            Canon EF-S 24mm f/2.8 STM este un obiectiv grandangular compact(pancake) şi uşor ce poate fi purtat oriunde, 
+            mai ales în timpul călătoriilor dumneavoastră. Asigură imagini de o calitate excepţională şi o focalizare 
+            foarte rapidă. Sosirea serii nu va necesita folosirea unui blitz, întrucât diafragma maximă f/2.8 oferă 
+            posibilitatea fotografierii în condiţii de iluminare scăzută.
         </p>
     </script>
 @stop
