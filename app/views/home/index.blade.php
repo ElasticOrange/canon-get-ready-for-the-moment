@@ -4,10 +4,10 @@
     <div class="container-picture">
         <img src="img/pagina_intro.png"/>
         <div class="ugly-circle"></div>
-        <div class="text-intro">Aparatul foto reprezintă jumătate din povestea unei fotografii!</div>
-        <div class="text-intro-second">Cealaltă jumătate o
-reprezintă obiectivele. Descoperă ce obiectiv ţi se potriveşte şi intră
-automat în competiţie pentru a câştiga un obiectiv CANON</div>
+        <div class="text-intro"></div>
+        <div class="text-intro-second">Momente speciale te asteapta la orice pas! Pregateste-te sa le surprinzi 
+        si profita de discountul de 300 de Ron la achizitia unui obiectiv suplimentar. Parcurge aplicatia si 
+        descopera obiectivul preferat!</div>
         <button type="button" class="button-descopera">Intră în aplicaţie aici!</button>
     </div>
 
