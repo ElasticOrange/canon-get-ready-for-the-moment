@@ -12,7 +12,7 @@
         <!-- Portrait -->
         <div class="girl-head"></div>
         <div class="circle-girl-container">
-            <img class="cerc-profil" src="/img/gif_1_fata.gif" />
+            <img class="cerc-profil" src="/img/gif_frunza2.gif" />
             <img class="circle-girl" src="/img/bulina_rosie.png" />
             <span class="circle-girl-text">Vreţi un detaliu perfect?</span>
         </div>
@@ -56,7 +56,7 @@
 
     <img class="obiectiv-kit" id="obiectiv-kit" src="/img/Obiective/obiectiv2.png">
     <img class="obiectiv-kit" id="obiectiv-wide" src="/img/Obiective/obiectiv1.png">
-    <img class="obiectiv-kit" id="obiectiv-portrait" src="/img/Obiective/obiectiv4.png">
+    <img class="obiectiv-kit-60mm" id="obiectiv-portrait" src="/img/obiectiv_60mm.png">
     <img class="obiectiv-kit" id="obiectiv-tele" src="/img/Obiective/obiectiv3.png">
     <div class="text-container">
     </div>

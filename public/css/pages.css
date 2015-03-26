@@ -417,3 +417,11 @@ body {
   /* width: 130px; */
   font-size: 12px;
 }
+
+.obiectiv-kit-60mm{
+  display: none;
+  position: absolute;
+  z-index: 4;
+  left: 25px;
+  top: 565px;
+}

@@ -206,8 +206,8 @@ goto_step_3 = ()->
 
             $('.picture-container').animate \
                 'background-size': '300%'
-                , 'background-position-x': '-160px'
-                , 'background-position-y': '-910px'
+                , 'background-position-x': '-760px'
+                , 'background-position-y': '-1010px'
                 , zoom_duration
                 , 'easeInQuad'
         else
