@@ -29,15 +29,22 @@
 
     </div>
         
-        <!-- Nou -->
-        <div class="circle-girlback-container">
-            <div class="ugly-circle2"></div>
-            <span class="circle-girlback-text">Vrei un peisaj perfect?</span>
-        </div>
-        <!-- /Nou -->
-        
-    <div class="picture-container2">
+    <!-- Nou -->
+    <div class="circle-girlback-container">
+        <!-- <div class="ugly-circle2"></div> -->
+        <img src="/img/bulina_24mm.jpg" alt="" class="bulina_24mm">
+        <span class="circle-girlback-text">Vrei un peisaj perfect?</span>
     </div>
+    <!-- /Nou -->
+        
+    <!-- Pagina 24mm -->
+    <div class="picture-container24mm">
+        <div class="back-button-container">
+            <img src="/img/back-button.png" /><br />
+            <span>Continuă</span>
+        </div>
+    </div>
+    <!-- /Pagina 24mm -->
 
 
 

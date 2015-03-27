@@ -38,16 +38,14 @@ body {
   margin-right: auto; }
 
 /* line 333, /usr/share/nginx/facebook-obiective/public/css/style.scss */
-.picture-container2 {
+.picture-container24mm {
   display: none;
   background-image: url('../img/imagine_24mm.jpg');
   background-position: center bottom;
-  height: 379px;
-  width: 570px;
-  position: relative;
-  top: 128px;
-  margin-left: auto;
-  margin-right: auto; }
+  top: 0px;
+  width: 760px;
+  height: 507px;
+  display: none; }
 
 /* line 60, /usr/share/nginx/facebook-obiective/public/css/style.scss */
 .grey-container {
@@ -154,7 +152,7 @@ body {
   width: 150px;
   cursor: pointer;
   cursor: hand;
-  top: 265px;
+  top: 305px;
   left: 305px; }
 
 /* line 321, /usr/share/nginx/facebook-obiective/public/css/style.scss */
@@ -206,7 +204,6 @@ body {
   position: absolute;
   text-align: center;
   color: white;
-  font-weight: 700;
   cursor: pointer;
   cursor: hand;
 }
@@ -313,4 +310,13 @@ body {
   left: 260px;
   z-index: 0;
   opacity: 0.6;
+}
+
+.bulina_24mm {
+  display: none;
+  position: absolute;
+  top: 220px;
+  left: 260px;
+  z-index: 0;
+  border-radius: 50%;
 }

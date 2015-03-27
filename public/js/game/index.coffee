@@ -364,15 +364,15 @@ goto_step_5 = ()->
             ()->
                 if current_step is 5
                     $('.circle-girlback-container').stop(true).fadeIn()
-                    $('.ugly-circle2').stop(true).fadeIn()
+                    $('.bulina_24mm').stop(true).fadeIn()
                     $('.circle-girlback-text').stop(true).fadeIn()
             , 5000
         $('.circle-girlback-container').mouseenter ()->
-            $('.ugly-circle2').stop(true, true).animate \
+            $('.bulina_24mm').stop(true, true).animate \
                 boxShadow: '0px 0px 15px #fff'
                 , 100
         $('.circle-girlback-container').mouseleave ()->
-            $('.ugly-circle2').stop(true, true).animate \
+            $('.bulina_24mm').stop(true, true).animate \
                 boxShadow: '0px 0px 0px #fff'
                 , 100
         display_lens(5)
@@ -390,19 +390,25 @@ goto_step_5 = ()->
 goto_step_6 = ()->
     if current_step is 5
         current_step = 6
-        $('.circle-girlback-container').fadeOut()
         if (Modernizr.bgpositionxy)
-            $('.circle-girlback-container').animate \
+            $('.picture-container24mm').css \
+                'background-size': '390%'
+                , 'background-position-x': '-2160px'
+                , 'background-position-y': '-1310px'
+
+            $('.picture-container24mm').animate \
                 'background-size': '100%'
                 , 'background-position-x': '0px'
                 , 'background-position-y': '0px'
                 , zoom_duration
-                , 'easeOutQuad'
+                , 'easeInQuad'
         else
-            console.log 'FU Firefox again'
+            console.log "FU Firefox"
 
-        $('.picture-tele').css({display: 'block'}).fadeIn(zoom_duration)
-        $('.picture-container2').fadeOut(zoom_duration)
+        $('.picture-container24mm').css({display: 'block'}).fadeIn(zoom_duration)
+        $('.picture-tele').fadeOut(zoom_duration)
+
+        $('.circle-girlback-container').fadeOut(zoom_duration)
 
 goto_step_7 = ()->
     window.location = '/inscriere'

@@ -315,17 +315,17 @@ goto_step_5 = function() {
     setTimeout(function() {
       if (current_step === 5) {
         $('.circle-girlback-container').stop(true).fadeIn();
-        $('.ugly-circle2').stop(true).fadeIn();
+        $('.bulina_24mm').stop(true).fadeIn();
         return $('.circle-girlback-text').stop(true).fadeIn();
       }
     }, 5000);
     $('.circle-girlback-container').mouseenter(function() {
-      return $('.ugly-circle2').stop(true, true).animate({
+      return $('.bulina_24mm').stop(true, true).animate({
         boxShadow: '0px 0px 15px #fff'
       }, 100);
     });
     $('.circle-girlback-container').mouseleave(function() {
-      return $('.ugly-circle2').stop(true, true).animate({
+      return $('.bulina_24mm').stop(true, true).animate({
         boxShadow: '0px 0px 0px #fff'
       }, 100);
     });
@@ -344,20 +344,25 @@ goto_step_5 = function() {
 goto_step_6 = function() {
   if (current_step === 5) {
     current_step = 6;
-    $('.circle-girlback-container').fadeOut();
     if (Modernizr.bgpositionxy) {
-      $('.circle-girlback-container').animate({
+      $('.picture-container24mm').css({
+        'background-size': '390%',
+        'background-position-x': '-2160px',
+        'background-position-y': '-1310px'
+      });
+      $('.picture-container24mm').animate({
         'background-size': '100%',
         'background-position-x': '0px',
         'background-position-y': '0px'
-      }, zoom_duration, 'easeOutQuad');
+      }, zoom_duration, 'easeInQuad');
     } else {
-      console.log('FU Firefox again');
+      console.log("FU Firefox");
     }
-    $('.picture-tele').css({
+    $('.picture-container24mm').css({
       display: 'block'
     }).fadeIn(zoom_duration);
-    return $('.picture-container2').fadeOut(zoom_duration);
+    $('.picture-tele').fadeOut(zoom_duration);
+    return $('.circle-girlback-container').fadeOut(zoom_duration);
   }
 };
 
