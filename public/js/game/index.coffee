@@ -423,8 +423,13 @@ goto_step_6 = ()->
                             , ()->
                                 $('#obiectiv-nou').fadeIn()
 
+        $('.back-button-container').show(0).fadeIn()
+        # Go back to big picture on click
+        $('.back-button-container').click ()->
+            goto_step_7()
+
 goto_step_7 = ()->
-    window.location = '/inscriere'
+    window.location = '/final'
     true
 
 page_init = ()->

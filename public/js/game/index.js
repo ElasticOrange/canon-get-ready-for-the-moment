@@ -363,7 +363,7 @@ goto_step_6 = function() {
     $('.picture-container24mm').css({
       display: 'block'
     }).fadeIn(zoom_duration);
-    return $('.picture-container24mm').fadeIn(zoom_duration, function() {
+    $('.picture-container24mm').fadeIn(zoom_duration, function() {
       $('.text-container').fadeOut(function() {
         $('.text-container').html(_.template($('#texts-nou').html()));
         return $('.text-container').fadeIn();
@@ -372,11 +372,15 @@ goto_step_6 = function() {
         return $('#obiectiv-nou').fadeIn();
       });
     });
+    $('.back-button-container').show(0).fadeIn();
+    return $('.back-button-container').click(function() {
+      return goto_step_7();
+    });
   }
 };
 
 goto_step_7 = function() {
-  window.location = '/inscriere';
+  window.location = '/final';
   return true;
 };
 
