@@ -358,11 +358,20 @@ goto_step_6 = function() {
     } else {
       console.log("FU Firefox");
     }
+    $('.picture-tele').fadeOut(zoom_duration);
+    $('.circle-girlback-container').fadeOut(zoom_duration);
     $('.picture-container24mm').css({
       display: 'block'
     }).fadeIn(zoom_duration);
-    $('.picture-tele').fadeOut(zoom_duration);
-    return $('.circle-girlback-container').fadeOut(zoom_duration);
+    return $('.picture-container24mm').fadeIn(zoom_duration, function() {
+      $('.text-container').fadeOut(function() {
+        $('.text-container').html(_.template($('#texts-nou').html()));
+        return $('.text-container').fadeIn();
+      });
+      return $('#obiectiv-tele').fadeOut(400, function() {
+        return $('#obiectiv-nou').fadeIn();
+      });
+    });
   }
 };
 

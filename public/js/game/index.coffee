@@ -405,10 +405,23 @@ goto_step_6 = ()->
         else
             console.log "FU Firefox"
 
-        $('.picture-container24mm').css({display: 'block'}).fadeIn(zoom_duration)
         $('.picture-tele').fadeOut(zoom_duration)
-
         $('.circle-girlback-container').fadeOut(zoom_duration)
+
+        $('.picture-container24mm').css({display: 'block'}).fadeIn(zoom_duration)
+
+        $('.picture-container24mm').fadeIn \
+                    zoom_duration
+                    , ()->
+                        # Display the tele texts
+                        $('.text-container').fadeOut ()->
+                            $('.text-container').html(_.template($('#texts-nou').html()))
+                            $('.text-container').fadeIn()
+
+                        $('#obiectiv-tele').fadeOut \
+                            400
+                            , ()->
+                                $('#obiectiv-nou').fadeIn()
 
 goto_step_7 = ()->
     window.location = '/inscriere'
