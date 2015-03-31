@@ -38,7 +38,6 @@
         <div class="container-main">
             @yield('content')
             <div class="logo"><img src="/img/logo.png"/></div>
-            <!-- <a target="_blank" href="/doc/Regulamentulcampaniei-Orasulprintr-unobiectiv.pdf" class="regulament">Regulament</a> -->
         </div>
 
         <script src="/js/vendor/jquery.js"></script>
