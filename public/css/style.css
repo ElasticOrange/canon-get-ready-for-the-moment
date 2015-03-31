@@ -198,6 +198,18 @@ body {
   cursor: pointer;
   cursor: hand; }
 
+  .back-button-container2 {
+  z-index: 5;
+  display: none;
+  position: absolute;
+  top: 290px;
+  left: 570px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  cursor: hand; }
+
 .circle-girlback-container {
   z-index: 5;
   display: none;

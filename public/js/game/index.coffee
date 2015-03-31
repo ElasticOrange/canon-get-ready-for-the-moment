@@ -47,9 +47,14 @@ goto_step_minus_1 = ()->
             $('.preview-box').stop(true).fadeIn()
         , ()->
             $('.preview-box').stop(true).fadeOut()
-
-    $('.picture-container-blur').click ()->
-        goto_step_0()
+        
+    $('.back-button-container2').show(0).fadeIn()
+    
+    $('.picture-container-blur').click \
+        ()->
+            $('.back-button-container2')
+        , ()->
+                    goto_step_0()
 
 # Step 0
 goto_step_0 = ()->

@@ -49,7 +49,10 @@ goto_step_minus_1 = function() {
   }, function() {
     return $('.preview-box').stop(true).fadeOut();
   });
+  $('.back-button-container2').show(0).fadeIn();
   return $('.picture-container-blur').click(function() {
+    return $('.back-button-container2');
+  }, function() {
     return goto_step_0();
   });
 };

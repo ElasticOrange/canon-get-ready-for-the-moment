@@ -5,7 +5,12 @@
     </div>
 
     <div class="container-picture-2">
-        <div class="picture-container-blur hand"></div>
+        <div class="picture-container-blur hand">
+            <div class="back-button-container2">
+                <img src="/img/back-button.png" /><br />
+                <span>Continuă</span>
+            </div>
+        </div>
     </div>
 
     <div class="picture-container">
@@ -95,7 +100,7 @@
     <script type="text/template" id="display_lens_3">
         <div class="preview-lens3"></div>
         <div class="preview-title">Canon<br /> EF-S 60mm f/2.8 Macro USM </div>
-        <div class="preview-content-60mm">Obiectivul foto Canon EF-S 60mm f/2.8 Macro USM este un obiectiv pentru macro fotografie excelent, dinamic, compact, cu focalizare rapida care ofera detalii impresionante, indiferent de detaliul pe care doriti sa il surprindeti.</div>
+        <div class="preview-content-60mm">Obiectivul foto Canon EF-S 60mm f/2.8 Macro USM este un obiectiv pentru macro fotografie excelent, dinamic, compact, cu focalizare rapidă care oferă detalii impresionante, indiferent de detaliul pe care doriţi să îl surprindeţi.</div>
     </script>
 
     <script type="text/template" id="display_lens_4">
