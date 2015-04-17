@@ -3,6 +3,7 @@
 @section('content')
     <div class="final_page">
         <img src="/img/final_page.png" />
+        <h4 class="promotie">Perioada promoției: 1 aprilie - 30 aprilie 2015</h4>
     </div>
     <!-- <div class="container-picture">
         <div class="ugly-circle"></div>
